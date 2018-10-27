@@ -30,5 +30,4 @@ connectionSQL
     console.log("connection err = " + err)
   })
 
-module.exports.sql = connectionSQL
 module.exports.postgres = connectionPostgres;
