@@ -1,17 +1,28 @@
 import React, { Component } from "react";
+import Options from "./details/options";
+import Feedback from "./details/feedback";
+import Product from "./details/product";
+import Purchases from "./details/purchase";
 
 export default class App extends Component{
-  constructor(props){
-    super(props),
-    this.state = {
-      todo:""
-    }
-  }
-
   render(){
     return(
       <div>
-        <h1>Hello there</h1>
+        <div className="carousel">
+          carousel is loading
+        </div>
+        <div className="details">
+          <Options />
+        </div>
+        <div className="details">
+          <Feedback />
+        </div>
+        <div className="details">
+          <Product />
+        </div>
+        <div className="details">
+          <Purchases />
+        </div>
       </div>
     )
   }
