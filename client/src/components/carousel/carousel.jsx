@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import Feedback from "./feedback";
-import Options from "./feedback";
-import Product from "./product";
-import Purchase from "./purchase";
+import Featured from "./featured";
+import ImageList from "./imageList";
+import Status from "./status";
 
 export default class Details extends Component {
   constructor(props){
@@ -14,18 +13,15 @@ export default class Details extends Component {
   render(){
     return(
       <div>
-        this is the product detail
+        this is the images detail
         <div>
-          <Feedback />
+          <Featured />
         </div>
         <div>
-          <Options />
+          <ImageList />
         </div>
         <div>
-          <Product />
-        </div>
-        <div>
-          <Purchase />
+          <Status />
         </div>
       </div>
     )
