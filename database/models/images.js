@@ -20,4 +20,4 @@ const ImagesPostgres = postgres.define(
     })
 )
 
-module.exports.ImagesPostgres = ImagesPostgres;
+module.exports = ImagesPostgres;
