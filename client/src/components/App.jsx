@@ -3,20 +3,15 @@ import React, { Component } from "react";
 export default class App extends Component{
   constructor(props){
     super(props),
-    state = {
-      app:"app"
+    this.state = {
+      todo:""
     }
   }
-  
+
   render(){
     return(
-      <div className="product">
-        <div className="carousel">
-          carousel
-        </div>
-        <div className="details">
-          detauls
-        </div>
+      <div>
+        <h1>Hello there</h1>
       </div>
     )
   }
