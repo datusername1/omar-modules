@@ -88,3 +88,8 @@ body {
 .product-price-item{
   color: #000;
 }
+
+.purchase-form{
+  margin: 0px;
+  width: 100%;
+}

@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 
-export default class Feedback extends Component {
-  render(){
-    return(
-      <div>
-    
-      </div>
-    )
-  }
+export default function Options(props){
+  return(
+    <div>
+  
+    </div>
+  )
 }
