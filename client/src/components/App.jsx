@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Details from "./details/details";
 import Carousel from "./carousel/carousel";
 import axios from "axios";
-import Product from "./details/product";
 
 export default class App extends Component{
   constructor(props){
@@ -40,6 +39,8 @@ export default class App extends Component{
         console.log(err)
       })
   }
+
+
 
   render(){
     return(

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-export default class Option extends Component {
+export default class Feedback extends Component {
   render(){
     return(
       <div>
-        <p>{this.props.product.colors}</p>
+    
       </div>
     )
   }

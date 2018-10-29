@@ -14,7 +14,7 @@ const controller = {
   },
   post:(req, res) => {
     products.create({
-      name:"N_M_D Originals",
+      name:"NMD R1 SHOES ",
       price:185.00,
       icon:"http://placekitten.com/g/200/300",
       colors:"RED/BLUE/GREEN",
@@ -24,7 +24,7 @@ const controller = {
       status:1,
       favorite:0,
       shipping:1,
-      category:"Running Shoes",
+      category:"ORIGINALS",
       review_count:185,
       stars:4.5
     })
