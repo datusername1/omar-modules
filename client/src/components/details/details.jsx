@@ -14,9 +14,7 @@ export default class Details extends Component {
         <div>
           <Options product={this.props.product}/>
         </div>
-        <form action="" className="purchase-form">
-          <Purchase product={this.props.product}/>
-        </form>
+        <Purchase product={this.props.product}/>
       </div>
     )
   }
