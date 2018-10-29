@@ -18,8 +18,13 @@ export default class Feedback extends Component {
             </span>
           </div>
         </div>
-        <div className="product-category">{this.props.product.category}</div>
-        <h1>{this.props.product.name}</h1>
+        <div className="product-category">  
+          <div className="product-category-item">{this.props.product.category}</div>
+        </div>
+        <h1 className="product-name">{this.props.product.name}</h1>
+        <div>
+          <span>${this.props.product.price}</span>
+        </div>
       </div>
     )
   }

@@ -32,14 +32,14 @@ body {
 
 .details-information{
   height:105px;
-  background-color: antiquewhite;
+  background-color: white;
   margin-bottom: 20px;
 }
 
 .details-feedback{
   height: 20px;
   margin-bottom: 10px;
-  background-color: beige;
+  background-color: white;
   display: inline-block;
   width: 100%;
 }
@@ -62,4 +62,29 @@ body {
 .product-category{
   font-size: 13px;
   letter-spacing: 2px;
+  color: #98989a;
+}
+
+.product-category-item{
+  margin: 0 0 2px;
+}
+
+.product-name{
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  line-height: 28px;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+.product-price{
+  font-weight: 400;
+  font-style: normal;
+  font-size:16px;
+}
+
+.product-price-item{
+  color: #000;
 }
