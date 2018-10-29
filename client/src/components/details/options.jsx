@@ -4,7 +4,7 @@ export default class Option extends Component {
   render(){
     return(
       <div>
-        this is the option
+        <p>{this.props.product.colors}</p>
       </div>
     )
   }

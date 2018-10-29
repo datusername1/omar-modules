@@ -8,19 +8,18 @@ export default class Details extends Component {
 
   render(){
     return(
-      <div>
-        this is the product detail
+      <div className="details">
         <div>
-          <Feedback />
+          <Feedback product={this.props.product}/>
         </div>
         <div>
-          <Options />
+          <Options product={this.props.product}/>
         </div>
         <div>
-          <Product />
+          <Product product={this.props.product}/>
         </div>
         <div>
-          <Purchase />
+          <Purchase product={this.props.product}/>
         </div>
       </div>
     )

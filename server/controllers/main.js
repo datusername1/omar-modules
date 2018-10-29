@@ -18,7 +18,7 @@ const controller = {
       price:185.00,
       icon:"http://placekitten.com/g/200/300",
       colors:"RED/BLUE/GREEN",
-      size:"9/9.5/10/10.5/11",
+      sizes:"9/9.5/10/10.5/11",
       quantity:100,
       inventory:1,
       status:1,

@@ -4,8 +4,20 @@ html {
   background-color: white;
 }
 
+body {
+  margin-top:0px;
+}
+
 .banner {
   height: 800px;
   background-color: #ededed;
   margin: -7px;
+}
+
+.details {
+  padding-left:15px;
+  padding-right:15px;
+  width: 416px;
+  background-color: white;
+  height: 100%;
 }

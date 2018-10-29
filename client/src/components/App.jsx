@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Details from "./details/details";
 import Carousel from "./carousel/carousel";
 import axios from "axios";
+import Product from "./details/product";
 
 export default class App extends Component{
   constructor(props){
@@ -19,7 +20,10 @@ export default class App extends Component{
     axios
       .get("/api/product")
       .then((response) => {
-        console.log(response)
+        this.setState({
+          product:response.data[0]
+        })
+        console.log(this.state.product)
       })
       .catch((err) => {
         console.log(err)
@@ -41,10 +45,10 @@ export default class App extends Component{
     return(
       <div className="banner">
         <div className="carousel">
-          <Carousel/>
+          {/* <Carousel/> */}
         </div>
         <div className="details">
-          <Details />
+          <Details product={this.state.product}/>
         </div>
       </div>
     )

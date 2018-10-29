@@ -4,7 +4,8 @@ export default class Feedback extends Component {
   render(){
     return(
       <div>
-        this is the feedback
+        <p>{this.props.product.stars}</p>
+        <p>{this.props.product.review_count}</p>
       </div>
     )
   }

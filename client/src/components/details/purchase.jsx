@@ -4,7 +4,10 @@ export default class Purchase extends Component {
   render(){
     return(
       <div>
-        this is the purchase
+        <p>{this.props.product.shipping}</p>
+        <p>{this.props.product.favorite}</p>
+        <p>{this.props.product.status}</p>
+        <p>{this.props.product.quantity}</p>
       </div>
     )
   }

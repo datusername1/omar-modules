@@ -15,7 +15,7 @@ const ProductPostgres = postgres.define(
     status:{type:seq.SMALLINT},
     favorite:{type:seq.BOOLEAN},
     shipping:{type:seq.SMALLINT}, 
-    categories:{type:seq.STRING},
+    category:{type:seq.STRING},
     review_count:{type:seq.INTEGER}, 
     stars:{type:seq.INTEGER}
   },
