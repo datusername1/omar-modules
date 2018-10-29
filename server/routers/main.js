@@ -2,7 +2,7 @@ const router = require("express").Router()
 const controller = require("../controllers/main")
 
 router 
-  .route("/shoes")
+  .route("/product")
   .get(controller.get)
   .post(controller.post)
   .put(controller.put)

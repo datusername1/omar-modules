@@ -1,0 +1,11 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+
+.banner {
+  height: 800px;
+  background-color: #ededed;
+  margin: -7px;
+}

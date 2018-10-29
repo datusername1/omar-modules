@@ -5,12 +5,7 @@ import Product from "./product";
 import Purchase from "./purchase";
 
 export default class Details extends Component {
-  constructor(props){
-    super(props),
-    this.state = {
-      product:""
-    }
-  }
+
   render(){
     return(
       <div>

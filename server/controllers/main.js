@@ -4,7 +4,13 @@ const data = require("../../seed/seedData.json")
 
 const controller = {
   get:(req, res) => {
-    console.log("something")
+    products.findAll({})
+      .then((response) => {
+        res.status(200).send(response)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   },
   post:(req, res) => {
     products.create({
@@ -22,8 +28,8 @@ const controller = {
       review_count:185,
       stars:4.5
     })
-    .then((response) => {
-      res.status(200).send(response)
+    .then(() => {
+      res.status(200).send("posted")
     })
     .catch((err) => {
       console.log(err)
