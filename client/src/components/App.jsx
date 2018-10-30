@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Details from "./details/details";
 import Carousel from "./carousel/carousel";
 import axios from "axios";
+import styles from "../css/app-style.css"
 
 export default class App extends Component{
   constructor(props){
@@ -44,11 +45,11 @@ export default class App extends Component{
 
   render(){
     return(
-      <div className="banner">
+      <div style={styles.banner}>
         <div className="carousel">
           {/* <Carousel/> */}
         </div>
-        <div className="details">
+        <div style={styles.details}>
           <Details product={this.state.product}/>
         </div>
       </div>
