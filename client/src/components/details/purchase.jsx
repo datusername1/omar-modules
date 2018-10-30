@@ -13,9 +13,7 @@ export default function Purchase(props) {
       </div>
       <SizeQuantity product={props.product}/>
       <AddToBag product={props.product}/>
-      <div>
-        <Shipping product={props.product}/>
-      </div>
+      <Shipping product={props.product}/>
     </form>
   )
 }
