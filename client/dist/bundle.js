@@ -202,7 +202,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = AddToBag;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction AddToBag(props) {\n  return _react2.default.createElement(\"div\", { className: \"add_to_bag\" });\n}\n\n//# sourceURL=webpack:///./client/src/components/details/purchase/addToBag.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = AddToBag;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _addToBag = __webpack_require__(/*! ../../../css/purchase/addToBag.css */ \"./client/src/css/purchase/addToBag.css.js\");\n\nvar _addToBag2 = _interopRequireDefault(_addToBag);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction AddToBag(props) {\n  return _react2.default.createElement(\n    \"div\",\n    { style: _addToBag2.default.AddToBag },\n    _react2.default.createElement(\n      \"button\",\n      { style: _addToBag2.default.AddToBagButton },\n      \"Add To Bag\",\n      _react2.default.createElement(\"img\", { style: _addToBag2.default.AddTOBagIcon, src: \"http://www.clker.com/cliparts/c/3/0/7/12456877162087486429Soeb_Plain_Arrow_7.svg.med.png\", alt: \"\" })\n    ),\n    _react2.default.createElement(\n      \"div\",\n      { style: _addToBag2.default.AddToBagFavorite },\n      _react2.default.createElement(\n        \"div\",\n        { style: _addToBag2.default.AddToFavoriteSelector },\n        _react2.default.createElement(\"img\", { style: _addToBag2.default.AddToFavoriteIcon, src: \"https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/heart-outline-512.png\", alt: \"\" })\n      )\n    )\n  );\n}\n\n//# sourceURL=webpack:///./client/src/components/details/purchase/addToBag.jsx?");
 
 /***/ }),
 
@@ -287,6 +287,18 @@ eval("\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.d
 
 "use strict";
 eval("\n\nvar purchaseForm = {\n  margin: '0px',\n  width: '100%'\n};\n\nvar sizeChart = {\n  marginBottom: '10px',\n  width: \"100.09px\"\n};\n\nmodule.exports.purchaseForm = purchaseForm;\nmodule.exports.sizeChart = sizeChart;\n\n//# sourceURL=webpack:///./client/src/css/purchase-style.css.js?");
+
+/***/ }),
+
+/***/ "./client/src/css/purchase/addToBag.css.js":
+/*!*************************************************!*\
+  !*** ./client/src/css/purchase/addToBag.css.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar AddToBag = {\n  marginBottom: \"20px\",\n  padding: \"0pxx\",\n  width: \"100%\",\n  display: \"flex\"\n};\n\nvar AddToBagButton = {\n  width: \"100%\",\n  justifyContent: \"space-between\",\n  position: \"relative\",\n  display: \"inline-flex\",\n  alignItems: \"center\",\n  minHeight: \"50px\",\n  padding: \"0 21px 0 21px\",\n  lineHeight: \"50px\",\n  backgroundColor: \"#000\",\n  color: \"#fff\",\n  textDecoration: \"none\",\n  cursor: \"pointer\",\n  whiteSpace: \"nowrap\",\n  fontSize: \"13px\",\n  letterSpacing: \"2px\",\n  boxShadow: \"inset 0 0 0 1px #000\"\n};\n\nvar AddTOBagIcon = {\n  display: \"inline-block\",\n  verticalAlign: \"text-top\",\n  height: \"24px\",\n  width: \"24px\",\n  flexShrink: \"0px\",\n  marginLeft: \"20px\"\n};\n\nvar AddToBagFavorite = {\n  marginLeft: \"10px\",\n  flex: \"none\",\n  display: \"flex\",\n  justifyContent: \"center\",\n  alignItems: \"center\",\n  height: \"50px\",\n  width: \"50px\",\n  padding: \"0px\",\n  color: \"#000\",\n  backgroundColor: \"#fff\",\n  border: \"1.01565px solid #000\",\n  letterSpacing: \"0px\",\n  lineHeight: \"47px\"\n};\n\nvar AddToFavoriteSelector = {\n  padding: \"0px\",\n  display: \"flex\",\n  alignItems: \"center\",\n  justifyContent: \"center\",\n  flex: \"1\",\n  height: \"100%\"\n};\n\nvar AddToFavoriteIcon = {\n  display: \"inline-block\",\n  verticalAlign: \"text-top\",\n  width: \"24px\",\n  height: \"24px\"\n};\n\nmodule.exports.AddToBag = AddToBag;\nmodule.exports.AddToBagButton = AddToBagButton;\nmodule.exports.AddTOBagIcon = AddTOBagIcon;\nmodule.exports.AddToBagFavorite = AddToBagFavorite;\nmodule.exports.AddToFavoriteIcon = AddToFavoriteIcon;\nmodule.exports.AddToFavoriteSelector = AddToFavoriteSelector;\n\n//# sourceURL=webpack:///./client/src/css/purchase/addToBag.css.js?");
 
 /***/ }),
 
