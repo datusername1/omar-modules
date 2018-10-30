@@ -5,7 +5,8 @@ const sizeChartItem = {
   paddingRight: '1px',
   color: '#000',
   textDecoration: 'underline',
-  cursor:'pointer'
+  cursor:'pointer',
+  width:"100px"
 }
 
 const sizeChartIcon = {

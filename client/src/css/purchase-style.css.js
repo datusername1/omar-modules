@@ -4,16 +4,14 @@ const purchaseForm = {
 }
 
 const sizeChart = {
-  marginBottom: '10px'
+  marginBottom: '10px',
+  width:"100.09px"
 }
 
 const sizeQQuantity = {
-  paddingLeft: '0px',
-  paddingRight: '0px',
-  display: 'flex',
-  flexWrap: 'wrap',
-  width: '100%',
-  position: 'static'
+  padding:"0px",
+  width: '75%',
+  float:"left"
 }
 
 module.exports.purchaseForm = purchaseForm;
