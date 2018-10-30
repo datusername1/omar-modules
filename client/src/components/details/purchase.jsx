@@ -11,12 +11,8 @@ export default function Purchase(props) {
       <div style={styles.sizeChart}>
         <SizeChart product={props.product}/>
       </div>
-      <div style={styles.sizeQQuantity}>
-        <SizeQuantity product={props.product}/>
-      </div>
-      <div>
-        <AddToBag product={props.product}/>
-      </div>
+      <SizeQuantity product={props.product}/>
+      <AddToBag product={props.product}/>
       <div>
         <Shipping product={props.product}/>
       </div>

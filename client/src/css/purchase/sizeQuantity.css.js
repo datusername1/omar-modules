@@ -1,5 +1,6 @@
 const sizeQuantitySize = {
   marginBottom: '10px',  
+  width:"75%"
 }
 
 const sizeQuantitySelector = {
@@ -12,7 +13,7 @@ const SizeQuantityBox = {
   fontSize:"13px",
   letterSpacing:"2px",
   fontWeight:"700",
-  postition:"relative",
+  position:"relative",
   display:"flex",
   alignItems:"center",
   justifyContent:"space-between",
@@ -31,7 +32,49 @@ const SizeQuantityIcon = {
 
 }
 
+const sizeQQuantity = {
+  padding:"0px",
+  float:"left",
+  width:"100%",
+  display:"flex",
+  position:"relative"
+}
+
+const QuantityBox = {
+  width:"25%",
+  paddingLeft:"10px"
+}
+
+const QuantityBoxItem = {
+  position:"relaive",
+  marginBottom:"10px"
+}
+
+const QuantityBoxDropdown = {
+  position:"relative",
+  display:"block",
+  cursor:"pointer"
+}
+
+const QuantityBoxSelector = {
+  paddingLeft:"15px",
+  paddingRight:"15px",
+  position:"relative",
+  display:"flex",
+  alignItems:"center",
+  justifyContent:"space-between",
+  textTransform:"uppercase",
+  height:"50px",
+  lineHeight:"22px"
+
+}
+
+
 module.exports.sizeQuantitySelector = sizeQuantitySelector;
 module.exports.sizeQuantitySize = sizeQuantitySize
 module.exports.SizeQuantityBox = SizeQuantityBox
 module.exports.SizeQuantityIcon = SizeQuantityIcon
+module.exports.sizeQQuantity = sizeQQuantity
+module.exports.QuantityBox = QuantityBox
+module.exports.QuantityBoxItem = QuantityBoxItem
+module.exports.QuantityBoxDropdown = QuantityBoxDropdown
