@@ -10,6 +10,20 @@ export default function Options(props){
       <div style={styles.OptionColorList}>
         {props.product.colors}
       </div>
+      <div style={styles.OptionColorSection}>
+        <div style={styles.OptionsColorIcons}>
+          <div style={styles.OptionsColorIconItem}>
+            <a style={styles.OptionsColorIconBackground} href="">
+              <div style={styles.OptionsColorsIconsPic}></div>
+            </a>
+          </div>
+          <div style={styles.OptionsColorIconItem}>
+            <a style={styles.OptionsColorIconBackground} href="">
+              <div style={styles.OptionsColorsIconsPic}></div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
