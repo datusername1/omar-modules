@@ -51,6 +51,9 @@ export default class App extends Component{
         <div style={styles.productCarousel}>
           <Carousel product={this.state.product}/>
         </div>
+        <div style={styles.status}>
+          NEW
+        </div>
         <div style={styles.details}>
           <Details product={this.state.product}/>
         </div>
