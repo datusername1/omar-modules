@@ -146,6 +146,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./client/src/components/details/checkmark.jsx":
+/*!*****************************************************!*\
+  !*** ./client/src/components/details/checkmark.jsx ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = Checkmark;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _checkmark = __webpack_require__(/*! ../../css/checkmark.css */ \"./client/src/css/checkmark.css.js\");\n\nvar _checkmark2 = _interopRequireDefault(_checkmark);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Checkmark(props) {\n  return _react2.default.createElement(\n    \"div\",\n    { style: _checkmark2.default.CheckmarkSelector },\n    _react2.default.createElement(\"img\", { style: _checkmark2.default.CheckmarkIcon, src: \"https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/google/56/white-heavy-check-mark_2705.png\", alt: \"\" })\n  );\n}\n\n//# sourceURL=webpack:///./client/src/components/details/checkmark.jsx?");
+
+/***/ }),
+
 /***/ "./client/src/components/details/details.jsx":
 /*!***************************************************!*\
   !*** ./client/src/components/details/details.jsx ***!
@@ -178,7 +190,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = Options;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _optionsStyle = __webpack_require__(/*! ../../css/options-style.css */ \"./client/src/css/options-style.css.js\");\n\nvar _optionsStyle2 = _interopRequireDefault(_optionsStyle);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Options(props) {\n  return _react2.default.createElement(\n    \"div\",\n    { style: _optionsStyle2.default.OptinoSection },\n    _react2.default.createElement(\n      \"h5\",\n      { style: _optionsStyle2.default.OptionTitle },\n      \"AVAILABLE COLORS\"\n    ),\n    _react2.default.createElement(\n      \"div\",\n      { style: _optionsStyle2.default.OptionColorList },\n      props.product.colors\n    ),\n    _react2.default.createElement(\n      \"div\",\n      { style: _optionsStyle2.default.OptionColorSection },\n      _react2.default.createElement(\n        \"div\",\n        { style: _optionsStyle2.default.OptionsColorIcons },\n        _react2.default.createElement(\n          \"div\",\n          { style: _optionsStyle2.default.OptionsColorIconItem },\n          _react2.default.createElement(\n            \"a\",\n            { style: _optionsStyle2.default.OptionsColorIconBackground, href: \"\" },\n            _react2.default.createElement(\"div\", { style: _optionsStyle2.default.OptionsColorsIconsPic })\n          )\n        ),\n        _react2.default.createElement(\n          \"div\",\n          { style: _optionsStyle2.default.OptionsColorIconItem },\n          _react2.default.createElement(\n            \"a\",\n            { style: _optionsStyle2.default.OptionsColorIconBackground, href: \"\" },\n            _react2.default.createElement(\"div\", { style: _optionsStyle2.default.OptionsColorsIconsPic })\n          )\n        )\n      )\n    )\n  );\n}\n\n//# sourceURL=webpack:///./client/src/components/details/options.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = Options;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _optionsStyle = __webpack_require__(/*! ../../css/options-style.css */ \"./client/src/css/options-style.css.js\");\n\nvar _optionsStyle2 = _interopRequireDefault(_optionsStyle);\n\nvar _checkmark = __webpack_require__(/*! ./checkmark */ \"./client/src/components/details/checkmark.jsx\");\n\nvar _checkmark2 = _interopRequireDefault(_checkmark);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Options(props) {\n  return _react2.default.createElement(\n    \"div\",\n    { style: _optionsStyle2.default.OptinoSection },\n    _react2.default.createElement(\n      \"h5\",\n      { style: _optionsStyle2.default.OptionTitle },\n      \"AVAILABLE COLORS\"\n    ),\n    _react2.default.createElement(\n      \"div\",\n      { style: _optionsStyle2.default.OptionColorList },\n      props.product.colors\n    ),\n    _react2.default.createElement(\n      \"div\",\n      { style: _optionsStyle2.default.OptionColorSection },\n      _react2.default.createElement(\n        \"div\",\n        { style: _optionsStyle2.default.OptionsColorIcons },\n        _react2.default.createElement(\n          \"div\",\n          { style: _optionsStyle2.default.OptionsColorIconItem },\n          _react2.default.createElement(_checkmark2.default, null),\n          _react2.default.createElement(\n            \"a\",\n            { style: _optionsStyle2.default.OptionsColorIconBackground, href: \"\" },\n            _react2.default.createElement(\"div\", { style: _optionsStyle2.default.OptionsColorsIconsPic })\n          )\n        ),\n        _react2.default.createElement(\n          \"div\",\n          { style: _optionsStyle2.default.OptionsColorIconItem },\n          _react2.default.createElement(\n            \"a\",\n            { style: _optionsStyle2.default.OptionsColorIconBackground, href: \"\" },\n            _react2.default.createElement(\"div\", { style: _optionsStyle2.default.OptionsColorsIconsPic })\n          )\n        )\n      )\n    )\n  );\n}\n\n//# sourceURL=webpack:///./client/src/components/details/options.jsx?");
 
 /***/ }),
 
@@ -254,6 +266,18 @@ eval("\n\nvar banner = {\n  height: '800px',\n  backgroundColor: '#ededed',\n  m
 
 /***/ }),
 
+/***/ "./client/src/css/checkmark.css.js":
+/*!*****************************************!*\
+  !*** ./client/src/css/checkmark.css.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar CheckmarkSelector = {\n  borderRadius: \"50%\",\n  backgroundColor: \"#000\",\n  position: \"absolute\",\n  right: \"0px\",\n  height: \"24px\",\n  width: \"24px\",\n  display: \"flex\",\n  alignItems: \"center\",\n  justifyContent: \"center\"\n};\n\nvar CheckmarkIcon = {\n  height: \"19px\",\n  width: \"19px\",\n  color: \"white\"\n};\n\nmodule.exports.CheckmarkSelector = CheckmarkSelector;\nmodule.exports.CheckmarkIcon = CheckmarkIcon;\n\n//# sourceURL=webpack:///./client/src/css/checkmark.css.js?");
+
+/***/ }),
+
 /***/ "./client/src/css/details-style.css.js":
 /*!*********************************************!*\
   !*** ./client/src/css/details-style.css.js ***!
@@ -262,7 +286,7 @@ eval("\n\nvar banner = {\n  height: '800px',\n  backgroundColor: '#ededed',\n  m
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar detailsProduct = {\n  padding: '20px',\n  height: '760px'\n};\n\nvar detailsInformation = {\n  height: '105px',\n  backgroundColor: 'white',\n  marginBottom: '20px'\n};\n\nmodule.exports.detailsProduct = detailsProduct;\nmodule.exports.detailsInformation = detailsInformation;\n\n//# sourceURL=webpack:///./client/src/css/details-style.css.js?");
+eval("\n\nvar detailsProduct = {\n  padding: '20px',\n  height: '760px'\n};\n\nvar detailsInformation = {\n  height: '105px',\n  backgroundColor: 'white',\n  marginBottom: '20px'\n};\n\nvar detailsCapsule = {\n  position: \"absolute\",\n  top: \"0\",\n  left: \"0\",\n  height: \"100%\",\n  width: \"100%\",\n  border: \"6px solid #ededee\",\n  backgroundColor: \"#ededee\",\n  zIndex: \"26\"\n};\n\nmodule.exports.detailsProduct = detailsProduct;\nmodule.exports.detailsInformation = detailsInformation;\nmodule.exports.detailsCapsule = detailsCapsule;\n\n//# sourceURL=webpack:///./client/src/css/details-style.css.js?");
 
 /***/ }),
 

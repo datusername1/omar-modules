@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "../../css/options-style.css"
+import Checkmark from "./checkmark"
 
 export default function Options(props){
   return(
@@ -13,6 +14,7 @@ export default function Options(props){
       <div style={styles.OptionColorSection}>
         <div style={styles.OptionsColorIcons}>
           <div style={styles.OptionsColorIconItem}>
+            <Checkmark />
             <a style={styles.OptionsColorIconBackground} href="">
               <div style={styles.OptionsColorsIconsPic}></div>
             </a>
