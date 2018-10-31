@@ -45,12 +45,15 @@ export default class App extends Component{
 
   render(){
     return(
-      <div style={styles.banner}>
-        <div className="carousel">
-          {/* <Carousel/> */}
+      <div style={styles.productDetails}>
+        <div style={styles.banner}></div>
+        <div style={styles.detailsContent}>
+        <div style={styles.productCarousel}>
+          <Carousel product={this.state.product}/>
         </div>
         <div style={styles.details}>
           <Details product={this.state.product}/>
+        </div>
         </div>
       </div>
     )
