@@ -13,21 +13,7 @@ const controller = {
       })
   },
   post:(req, res) => {
-    products.create({
-      name:"NMD R1 SHOES ",
-      price:185.00,
-      icon:"http://placekitten.com/g/200/300",
-      colors:"RED/BLUE/GREEN",
-      sizes:"9/9.5/10/10.5/11",
-      quantity:100,
-      inventory:1,
-      status:1,
-      favorite:0,
-      shipping:1,
-      category:"ORIGINALS",
-      review_count:185,
-      stars:4.5
-    })
+    products.create(req.body)
     .then(() => {
       res.status(200).send("posted")
     })

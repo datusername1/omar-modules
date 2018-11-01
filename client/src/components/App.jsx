@@ -3,7 +3,8 @@ import Details from "./details/details";
 import Carousel from "./carousel/carousel";
 import Complete from "./details/completeLook"
 import axios from "axios";
-import styles from "../css/app-style.css"
+import styles from "../css/app-style.css";
+import seedData from "../../../utility/utils"
 
 export default class App extends Component{
   constructor(props){
@@ -14,7 +15,7 @@ export default class App extends Component{
   }
 
   componentDidMount(){
-    this.fetchProduct();
+    this.addProducts()
   }
 
   fetchProduct(){
@@ -32,14 +33,15 @@ export default class App extends Component{
   }
 
   addProducts(){
-    axios 
-      .post("/api/product")
-      .then((response) => {
-        console.log(response)
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+    seedData.createSeedData()
+    // axios 
+    //   .post("/api/product")
+    //   .then((response) => {
+    //     console.log(response)
+    //   })
+    //   .catch((err) => {
+    //     console.log(err)
+    //   })
   }
 
   render(){
