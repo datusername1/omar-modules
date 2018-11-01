@@ -1,6 +1,5 @@
 const products = require("../../database/models/products")
 const images = require("../../database/models/images")
-const data = require("../../seed/seedData.json")
 
 const controller = {
   get:(req, res) => {

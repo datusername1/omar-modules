@@ -4,7 +4,6 @@ import Carousel from "./carousel/carousel";
 import Complete from "./details/completeLook"
 import axios from "axios";
 import styles from "../css/app-style.css";
-import seedData from "../../../utility/utils"
 
 export default class App extends Component{
   constructor(props){
