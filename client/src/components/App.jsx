@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Details from "./details/details";
 import Carousel from "./carousel/carousel";
-import Complete from "./details/completeLook"
+import Complete from "./details/completeLook";
+import Breadcrum from "./breadcrums"
 import axios from "axios";
 import styles from "../css/app-style.css";
 
@@ -14,7 +15,7 @@ export default class App extends Component{
   }
 
   componentDidMount(){
-    this.addProducts()
+    this.fetchProduct()
   }
 
   fetchProduct(){
@@ -31,33 +32,24 @@ export default class App extends Component{
       })
   }
 
-  addProducts(){
-    seedData.createSeedData()
-    // axios 
-    //   .post("/api/product")
-    //   .then((response) => {
-    //     console.log(response)
-    //   })
-    //   .catch((err) => {
-    //     console.log(err)
-    //   })
-  }
-
   render(){
     return(
-      <div style={styles.productDetails}>
-        <div style={styles.banner}></div>
-        <div style={styles.detailsContent}>
-          <div style={styles.productCarousel}>
-            <Carousel product={this.state.product}/>
+      <div>
+        <Breadcrum />
+        <div style={styles.productDetails}>
+          <div style={styles.banner}></div>
+          <div style={styles.detailsContent}>
+            <div style={styles.productCarousel}>
+              <Carousel product={this.state.product}/>
+            </div>
+            <div style={styles.status}>
+              NEW
+            </div>
+            <div style={styles.details}>
+              <Details product={this.state.product}/>
+            </div>
+            <Complete product={this.state.product}/>
           </div>
-          <div style={styles.status}>
-            NEW
-          </div>
-          <div style={styles.details}>
-            <Details product={this.state.product}/>
-          </div>
-          <Complete product={this.state.product}/>
         </div>
       </div>
     )
