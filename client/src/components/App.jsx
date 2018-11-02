@@ -18,14 +18,18 @@ export default class App extends Component{
     this.fetchProduct()
   }
 
+  generateRandomNumber(value){
+    return Math.floor(Math.random() * value)
+  }
+
   fetchProduct(){
     axios
       .get("/api/product")
       .then((response) => {
+        console.log(response)
         this.setState({
-          product:response.data[0]
+          product:response.data
         })
-        console.log(this.state.product)
       })
       .catch((err) => {
         console.log(err)

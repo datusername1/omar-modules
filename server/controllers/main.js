@@ -1,28 +1,18 @@
 const products = require("../../database/models/products")
 const images = require("../../database/models/images")
+const utils = require("../../utils/utils")
 
 const controller = {
   get:(req, res) => {
-    products.findAll({})
+    var recordId = utils.generateRandomNumber(101)
+    products.findById(recordId)
       .then((response) => {
-        res.status(200).send(response)
+        console.log(response.dataValues)
+        res.status(200).send(response.dataValues)
       })
       .catch((err) => {
         console.log(err)
       })
-  },
-  post:(req, res) => {
-    products.create(req.body)
-    .then(() => {
-      res.status(200).send("posted")
-    })
-    .catch((err) => {
-      console.log(err)
-    })
-    console.log("something")
-  },
-  put:(req, res) => {
-    console.log("something")
   },
   delete:(req, res) => {
     console.log("something")
