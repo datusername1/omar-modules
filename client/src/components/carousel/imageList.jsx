@@ -11,13 +11,13 @@ export default function Option (props) {
             <img style={styles.ImageTemplateImage} src="" alt=""/>
           </button>
         </div>
-        <ImageListItem product={props.product}/>
-        <ImageListItem product={props.product}/>
-        <ImageListItem product={props.product}/>
-        <ImageListItem product={props.product}/>
-        <ImageListItem product={props.product}/>
-        <ImageListItem product={props.product}/>
-        <ImageListItem product={props.product}/>
+        {
+          props.images.map((image) => (
+            <div key={image}>
+              <ImageListItem image={image}/>
+            </div>
+          ))
+        }
       </div>
     </div>
   )

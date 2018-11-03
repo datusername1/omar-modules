@@ -49,9 +49,7 @@ const OptionsColorIconBackground = {
 
 const OptionsColorsIconsPic = {
   borderRadius:"50%",
-  paddingBottom:'100%',
   backgroundSize:"cover",
-  backgroundImage:'url("http://placekitten.com/g/70/70")'
 }
 
 module.exports.OptinoSection = OptionSection

@@ -1,5 +1,4 @@
 const products = require("../../database/models/products")
-const images = require("../../database/models/images")
 const utils = require("../../utils/utils")
 
 const controller = {

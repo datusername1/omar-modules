@@ -3,6 +3,7 @@ import styles from "../../css/options-style.css"
 import Checkmark from "./checkmark"
 
 export default function Options(props){
+  console.log(props.options)
   return(
     <div style={styles.OptinoSection}>
       <h5 style={styles.OptionTitle}>
@@ -13,7 +14,16 @@ export default function Options(props){
       </div>
       <div style={styles.OptionColorSection}>
         <div style={styles.OptionsColorIcons}>
-          <div style={styles.OptionsColorIconItem}>
+          {
+            props.options.map((option) => (
+              <div style={styles.OptionsColorIconItem} key={option}>
+                <a style={styles.OptionsColorIconBackground} href="">
+                  <img style={styles.OptionsColorsIconsPic} src={option} alt=""/>
+                </a>
+              </div>
+            ))
+          }
+          {/* <div style={styles.OptionsColorIconItem}>
             <Checkmark />
             <a style={styles.OptionsColorIconBackground} href="">
               <div style={styles.OptionsColorsIconsPic}></div>
@@ -23,7 +33,7 @@ export default function Options(props){
             <a style={styles.OptionsColorIconBackground} href="">
               <div style={styles.OptionsColorsIconsPic}></div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

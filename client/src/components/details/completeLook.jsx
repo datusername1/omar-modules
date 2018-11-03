@@ -11,7 +11,7 @@ export default function Options(props){
             <div style={styles.CompletClothingJustify}>
               <div style={styles.CompleteClothingItemSelector}>
                 <div style={styles.CompleteClothingItemImage}>
-                  <img style={styles.CompleteClothingItemPic} src="http://placekitten.com/g/90/90" alt=""/>
+                  <img style={styles.CompleteClothingItemPic} src="https://loremflickr.com/100/100?random=13" alt=""/>
                 </div>
                 <div style={styles.CompleteClothingItemDetails}>
                   <div style={styles.CompleteClothingDetailsValue}>
@@ -21,7 +21,7 @@ export default function Options(props){
               </div>
               <div style={styles.CompleteClothingItemSelector}>
                 <div style={styles.CompleteClothingItemImage}>
-                  <img style={styles.CompleteClothingItemPic} src="http://placekitten.com/g/90/90" alt=""/>
+                  <img style={styles.CompleteClothingItemPic} src="https://loremflickr.com/100/100?random=14" alt=""/>
                 </div>
                 <div style={styles.CompleteClothingItemDetails}>
                   <div style={styles.CompleteClothingDetailsValue}>
@@ -31,7 +31,7 @@ export default function Options(props){
               </div>
               <div style={styles.CompleteClothingItemSelector}>
                 <div style={styles.CompleteClothingItemImage}>
-                  <img style={styles.CompleteClothingItemPic} src="http://placekitten.com/g/90/90" alt=""/>
+                  <img style={styles.CompleteClothingItemPic} src="https://loremflickr.com/100/100?random=15" alt=""/>
                 </div>
                 <div style={styles.CompleteClothingItemDetails}>
                   <div style={styles.CompleteClothingDetailsValue}>
