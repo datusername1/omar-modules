@@ -3,8 +3,7 @@ const express = require("express")
 const normalize = require("normalize-port")
 const databases = require("../database/index.js")
 
-const listenPort = 5588
+const listenPort = 3001
+server.listen(listenPort, () => {console.log(`server is running at http://localhost:${listenPort}`)})
 
-server.listen(listenPort, () => {console.log("connected to server")})
-
-module.exports = server;
+module.exports = server; 

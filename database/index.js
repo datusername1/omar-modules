@@ -2,8 +2,8 @@ const postgres = require("pg")
 const mysql = require("mysql")
 const seq = require("sequelize")
 
-const connectionPostgres = new seq("addidas", "omarjandali", "hackreactor25", {
-  "host":"127.0.0.1",
+const connectionPostgres = new seq("addidas", process.env.DB_USERNAME, process.env.DB_PASSWORD, {
+  "host":process.env.HOSTNAME,
   "dialect":"postgres",
 })
 
