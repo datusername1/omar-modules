@@ -3,7 +3,7 @@ const mysql = require("mysql")
 const seq = require("sequelize")
 
 const connectionPostgres = new seq("addidas", "omarjandali", "hackreactor25", {
-  "host":"localhost",
+  "host":"127.0.0.1",
   "dialect":"postgres",
 })
 
@@ -16,4 +16,4 @@ connectionPostgres
     console.log(err)
   })
 
-module.exports.postgres = connection
+module.exports.postgres = connectionPostgres;
