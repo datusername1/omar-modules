@@ -13,9 +13,11 @@ export default class App extends Component{
       product:"",
       featured:"",
       options:[],
-      images:[]
+      images:[],
+      magnify:false,
     }
   }
+
 
   componentDidMount(){
     this.fetchProduct()
@@ -41,12 +43,8 @@ export default class App extends Component{
         console.log(err)
       })
   }
-
+ 
   render(){
-    console.log(this.state.product)
-    console.log(this.state.featured)
-    console.log(this.state.options)
-    console.log(this.state.images)
     return(
       <div>
         <Breadcrum />
@@ -54,7 +52,7 @@ export default class App extends Component{
           <div style={styles.banner}></div>
           <div style={styles.detailsContent}>
             <div style={styles.productCarousel}>
-              <Carousel product={this.state.product} featured={this.state.featured} images={this.state.images}/>
+              <Carousel featured={this.state.featured} images={this.state.images} magnification={this.magnification}/>
             </div>
             <div style={styles.status}>
               NEW

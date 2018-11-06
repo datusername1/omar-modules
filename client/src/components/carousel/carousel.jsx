@@ -7,7 +7,7 @@ export default function Details (props) {
   return(
     <div style={styles.FeaturedContainer}>
       <div style={styles.FeaturedSelector}>
-        <img style={styles.FeaturedImage} src={props.featured} alt=""/>
+        <img  style={styles.FeaturedImage} className="featuredImage" src={props.featured} alt=""/>
       </div>
       <ImageList product={props.product} images={props.images}/>
     </div>
