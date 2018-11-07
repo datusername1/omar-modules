@@ -16,10 +16,12 @@ export default class App extends Component{
       images:[],
       magnify:false,
     }
+    axios.defaults.baseURL = "http://" + process.env.HOSTNAME + ":" + process.env.PORT;
   }
 
 
   componentDidMount(){
+    console.log("http://" + process.env.HOSTNAME + ":" + process.env.PORT)
     this.fetchProduct()
   }
 

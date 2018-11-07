@@ -1,3 +1,8 @@
+@font-face{
+  font-family:"AdihausDIN";
+  src:url('https://www.adidas.com/glass/assets/fonts/adidas/adineuePRO-Regular.woff2?hash=1RLZb') format("wolf2");
+}
+
 html {
   margin: 0px;
   padding: 0px;
