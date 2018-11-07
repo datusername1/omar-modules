@@ -1,4 +1,5 @@
 const path = require("path");
+require('dotenv').config();
 
 module.exports = {
   mode: "development",
@@ -16,10 +17,20 @@ module.exports = {
         options: {
           presets: ["react", "env"]
         }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   resolve: {
     extensions: [".js", ".jsx"]
-  }
+  },
+  // plugins: [
+  //   new webpack.DefinePlugin({
+  //     'process.env.HOSTNAME': JSON.stringify(process.env.HOSTNAME),
+  //     'process.env.PORT': JSON.stringify(process.env.PORT),
+  //   })
+  // ]
 };

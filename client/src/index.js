@@ -1,3 +1,5 @@
-import Details from "./components/App"
+import React from "react";
+import { render } from "react-dom";
+import App from "./components/App"
 
-window.Details = Details
+render(<App />, document.getElementById('app'))
