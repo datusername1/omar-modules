@@ -15,17 +15,20 @@
 }
 
 .breadCrumsList {
-  padding-top:5px;
+  padding:5px 0;
   padding-bottom:5px;
   color:#000;
   line-height:20px;
   font-size:14px;
   margin-top:0px;
+  display: flex;
+  margin-bottom: 0px
 }
 
 .breadcrumListItemSection {
   display:inline-flex;
   align-items:center;
+  text-align: left
 }
 
 .breadcrumListItemButton {
