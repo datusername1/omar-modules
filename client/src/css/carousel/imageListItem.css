@@ -2,7 +2,7 @@
   border:1px solid #98989a;
   margin-bottom:10px;
   cursor:pointer;
-  height:'auto';
+  height:auto;
   flex-grow:0;
   flex-shrink:0;
   position:relative;
