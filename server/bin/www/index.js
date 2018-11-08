@@ -6,6 +6,7 @@ const request = require("request")
 var cors = require('cors')
 const app = require("../../app.js")
 const router = require("../../routers/main.js")
+require('dotenv').config();
 
 const server = express()
 
