@@ -1,42 +1,48 @@
 .detailsFeedback  {
-  height: '20px';
-  margin-bottom: '10px';
-  background-color: 'white';
-  display: 'inline-block';
-  width: '100%'
+  height: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  display: inline-block;
+  width: 100%
 }
 
 .ratings  {
-  width:'80px'
+  width:80px
 }
 
 .ratingStar  {
-  height: '16px';
-  width: '16px'
+  height: 16px;
+  width: 16px
 }
 
 .detailReviews  {
-  padding-left: '1px';
-  padding-right: '1px';
-  margin-left: '5px'
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-left: 5px
 }
 
 .productCategory  {
-  font-size: '13px';
-  letter-spacing: '2px';
-  color: '#98989a'
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #98989a
 }
 
 .productCategoryItem  {
-  margin: "0 0 2px"
+  margin: 0 0 2px;
+  text-align: left
 }
 
 .productName  {
-  margin: '0px';
-  padding: '0px';
-  font-size: '30px';
-  margin-bottom: '7px';
-  line-height: '28px';
-  font-weight: '600';
-  font-weight: 'bold'
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  line-height: 28px;
+  font-weight: 600;
+  font-weight: bold;
+  text-align: left;
+}
+
+.productPrice{
+  text-align: left
 }

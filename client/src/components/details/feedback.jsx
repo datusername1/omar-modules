@@ -22,7 +22,7 @@ export default function Feedback(props) {
         <div  className={styles.productCategoryItem}>{props.product.category}</div>
       </div>
       <h1 className={styles.productName}>{props.product.name}</h1>
-      <div>
+      <div className={styles.productPrice}>
         <span>${props.product.price}</span>
       </div>
     </div>

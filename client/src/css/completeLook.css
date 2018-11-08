@@ -9,7 +9,7 @@
 
 .completeSection  {
   padding-right:0;
-  padding-left:'0';
+  padding-left:0;
 }
 
 .completeSelector  {
@@ -39,18 +39,18 @@
 }
 
 .CompletClothingJustify  {
-  justify-content:'left';
+  justify-content:left;
   display:flex
 }
 
 .CompleteClothingItemSelector  {
   max-width:90px;
-  position:'relative';
+  position:relative;
   margin:0 15px 0 0
 }
 
 .CompleteClothingItemImage  {
-  position:'relative'  
+  position:relative  
 }
 
 .CompleteClothingItemPic  {
