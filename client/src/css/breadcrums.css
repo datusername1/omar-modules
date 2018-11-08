@@ -1,0 +1,70 @@
+.breadcrums {
+  align-items:center;
+  display:flex;
+  height:38px;
+}
+
+.breadcrumsSection{
+  width:1280px;
+  padding-left:15px;
+  padding-right:15px;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+}
+
+.breadCrumsList {
+  padding-top:5px;
+  padding-bottom:5px;
+  color:#000;
+  line-height:20px;
+  font-size:14px;
+  margin-top:0px;
+}
+
+.breadcrumListItemSection {
+  display:inline-flex;
+  align-items:center;
+}
+
+.breadcrumListItemButton {
+  padding:0;
+  height:24px;
+  line-height:24px;
+  padding-right:5px;
+  margin-right:15px;
+  border:none;
+  background:none;
+  color:#000;
+  font-size:13px;
+  text-decoration:underline;
+  vertical-align:bottom;
+}
+
+.breadCrumListItemImage{
+  margin-right:5px;
+  height:24px;
+  width:24px;
+  top:0;
+  position:relative;
+  vertical-align:text-top
+}
+
+.breadCrumMainItem {
+  height:24px;
+  line-height:24px;
+  display:inline;
+  vertical-align:bottom;
+  padding-left:1px;
+  padding-right:1px;
+  color:#000;
+  text-decoration:underline;
+  cursor:pointer;
+  color:#000;
+}
+
+.breadCrumMainItemSeperator{
+  padding-left:5px;
+  padding-right:5px
+}

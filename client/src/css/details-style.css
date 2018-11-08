@@ -1,0 +1,21 @@
+.detailsProduct  {
+  padding: 20px;
+  height: 760px
+}
+
+.detailsInformation  {
+  height:105px;
+  background-color: white;
+  margin-bottom: 20px
+}
+
+.detailsCapsule  {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  border:6px solid #ededee;
+  background-color:#ededee;
+  z-index:26
+}

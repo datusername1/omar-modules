@@ -1,0 +1,66 @@
+.AddToBag  {
+  margin-bottom:20px;
+  padding:0px;
+  width:100%;
+  display:flex;
+}
+
+.AddToBagButton  {
+  width:100%;
+  justify-content:space-between;
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  min-height:50px;
+  padding:0 21px 0 21px;
+  line-height:50px;
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+  white-space:nowrap;
+  font-size:13px;
+  letter-spacing:2px;
+  box-shadow:inset 0 0 0 1px #000
+}
+
+.AddTOBagIcon  {
+  display:inline-block;
+  vertical-align:text-top;
+  height:24px;
+  width:24px;
+  flex-shrink:0px;
+  margin-left:20px
+}
+
+.AddToBagFavorite  {
+  margin-left:10px;
+  flex:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:50px;
+  width:50px;
+  padding:0px;
+  color:#000;
+  background-color:#fff;
+  border:1.01565px solid #000;
+  letter-spacing:0px;
+  line-height:47px
+}
+
+.AddToFavoriteSelector  {
+  padding:0px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+  height:100%
+}
+
+.AddToFavoriteIcon  {
+  display:inline-block;
+  vertical-align:text-top;
+  width:24px;
+  height:24px;
+}

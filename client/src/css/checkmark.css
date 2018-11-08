@@ -1,0 +1,17 @@
+.CheckmarkSelector  {
+  border-radius:50%;
+  background-color:#000;
+  position:absolute;
+  right:0px;
+  height:24px;
+  width:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.CheckmarkIcon  {
+  height:19px;
+  width:19px;
+  color:white
+}
