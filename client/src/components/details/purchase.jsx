@@ -7,8 +7,8 @@ import styles from "../../css/purchase-style.css";
 
 export default function Purchase(props) {
   return(
-    <form action="" style={styles.purchaseForm}>
-      <div style={styles.sizeChart}>
+    <form action="" className={styles.purchaseForm}>
+      <div className={styles.sizeChart}>
         <SizeChart product={props.product}/>
       </div>
       <SizeQuantity product={props.product}/>

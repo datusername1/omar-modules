@@ -5,20 +5,20 @@ import Checkmark from "./checkmark"
 export default function Options(props){
   console.log(props.options)
   return(
-    <div style={styles.OptinoSection}>
-      <h5 style={styles.OptionTitle}>
+    <div className={styles.OptinoSection}>
+      <h5 className={styles.OptionTitle}>
         AVAILABLE COLORS
       </h5>
-      <div style={styles.OptionColorList}>
+      <div className={styles.OptionColorList}>
         {props.product.colors}
       </div>
-      <div style={styles.OptionColorSection}>
-        <div style={styles.OptionsColorIcons}>
+      <div className={styles.OptionColorSection}>
+        <div className={styles.OptionsColorIcons}>
           {
             props.options.map((option) => (
-              <div style={styles.OptionsColorIconItem} key={option}>
-                <a style={styles.OptionsColorIconBackground} href="">
-                  <img style={styles.OptionsColorsIconsPic} src={option} alt=""/>
+              <div className={styles.OptionsColorIconItem} key={option}>
+                <a className={styles.OptionsColorIconBackground} href="">
+                  <img className={styles.OptionsColorsIconsPic} src={option} alt=""/>
                 </a>
               </div>
             ))

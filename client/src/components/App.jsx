@@ -4,7 +4,7 @@ import Carousel from "./carousel/carousel";
 import Complete from "./details/completeLook";
 import Breadcrum from "./breadcrums"
 import axios from "axios";
-import styles from "../css/app-style.css";
+import styles from '../css/app-style.css';
 
 export default class App extends Component{
   constructor(props){
@@ -50,16 +50,16 @@ export default class App extends Component{
     return(
       <div>
         <Breadcrum />
-        <div style={styles.productDetails}>
-          <div style={styles.banner}></div>
-          <div style={styles.detailsContent}>
-            <div style={styles.productCarousel}>
+        <div className={styles.productDetails}>
+          <div className={styles.banner}></div>
+          <div className={styles.detailsContent}>
+            <div className={styles.productCarousel}>
               <Carousel featured={this.state.featured} images={this.state.images} magnification={this.magnification}/>
             </div>
-            <div style={styles.status}>
+            <div className={styles.status}>
               NEW
             </div>
-            <div style={styles.details}>
+            <div className={styles.details}>
               <Details product={this.state.product} options={this.state.options}/>
             </div>
             <Complete product={this.state.product}/>

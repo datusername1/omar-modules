@@ -1,0 +1,39 @@
+.ShippingSection{
+  cursor:pointer;
+}
+
+.ShippingSelector{
+  width:100%
+}
+
+.ShippingIconSelector{
+  width:100%;
+  display:flex
+}
+
+.ShippingIconBox{
+  display:inline;
+  position:relative;
+  margin-right: 10px;
+  width:25px;
+  height:25px;
+}
+
+.ShippingImage{
+  height:19px;
+  width:19px;
+  display:inline-block;
+  vertical-align:text-top;
+}
+
+.ShippingStatus{
+  display:inline
+}
+
+.ShippingStatusMessage{
+  vertical-align:text-top;
+  padding-left:'1px';
+  padding-right:1px;
+  color:#000;
+  text-decoration:underline
+}

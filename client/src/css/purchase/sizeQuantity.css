@@ -1,0 +1,71 @@
+.sizeQuantitySize{
+  margin-bottom: 10px;  
+  width:75%
+}
+
+.sizeQuantitySelector{
+  display:block;
+  cursor:pointer;
+}
+
+.SizeQuantityBox{
+  height:50px;
+  font-size:13px;
+  letter-spacing:2px;
+  font-weight:700;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  text-transform:uppercase;
+  line-height:22px;
+  border:1.01565px solid #98989a;
+  padding:0 18px 0 18px;
+  margin:0px
+}
+
+.SizeQuantityIcon{
+  height:24px;
+  width:24px;
+  margin-left:10px;
+  vertical-align:text-top;
+
+}
+
+.sizeQQuantity{
+  padding:0px;
+  float:left;
+  width:100%;
+  display:flex;
+  position:relative
+}
+
+.QuantityBox{
+  width:25%;
+  padding-left:10px
+}
+
+.QuantityBoxItem{
+  position:relative;
+  margin-bottom:10px
+}
+
+.QuantityBoxDropdown{
+  position:relative;
+  display:block;
+  cursor:pointer
+}
+
+.QuantityBoxSelector{
+  padding-left:15px;
+  padding-right:15px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  text-transform:uppercase;
+  height:50px;
+  line-height:22px
+
+}
+ 

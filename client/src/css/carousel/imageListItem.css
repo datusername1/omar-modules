@@ -1,0 +1,18 @@
+.ImageSection {
+  border:1px solid #98989a;
+  margin-bottom:10px;
+  cursor:pointer;
+  height:'auto';
+  flex-grow:0;
+  flex-shrink:0;
+  position:relative;
+  max-height:60px;
+  overflow:hidden
+}
+
+.ImagePic {
+  width:100%;
+  height:auto;
+  display:block;
+  max-width:100%
+}

@@ -9,9 +9,9 @@ export default class Details extends Component {
   render(){
     console.log(this.props.options)
     return(
-      <div style={style.detailsProduct}>
+      <div className={style.detailsProduct}>
         {/* <div style={style.detailsCapsule}> */}
-          <div style={style.detailsInformation}>
+          <div className={style.detailsInformation}>
             <Feedback product={this.props.product}/>
           </div>
           <Options product={this.props.product} options={this.props.options}/>
