@@ -1,6 +1,7 @@
 const path = require("path");
 require('dotenv').config();
 const webpack = require('webpack')
+require("fs")
 
 module.exports = {
   mode: "development",
@@ -33,14 +34,6 @@ module.exports = {
         ]
       }
     ], 
-    loaders: [
-      {  
-          test: /\.js$/,
-          exclude: 'node_modules',
-          loader: 'babel',
-          query: {presets: ['es2015']},
-      }
-    ] 
   },
   node: {
     fs: 'empty'
