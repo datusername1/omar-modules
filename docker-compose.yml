@@ -1,21 +1,20 @@
-web:
-  image: node
-  command: npm start
-  ports:
-    - "5585:5588"
-  links:
-    - db
-  working_dir: /app
-  environment:
-    SEQ_DB: addidas
-    SEQ_USER: omarjandali
-    SEQ_PW: hackreactor25
-    PORT: 4242
-    DATABASE_URL: postgres://omarjandali:hackreactor25@db:5432/addidas
-db:
-  image: postgres
-  ports:
-  - "5432:5432"
-  environment:
-    POSTGRES_USER: omarjandali
-    POSTGRES_PASSWORD: hackreactor25
+version: "3.1"
+services: 
+  web:
+    build: .
+    ports: 
+      - 80:3001
+    command: npm start 
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://omarjandali:hackreactor25@db:5432/addidas
+  db:
+    image: postgres 
+    restart: always
+    ports:
+      - "5432:5432"
+    environment: 
+      POSTGRES_USER: omarjandali
+      POSTGRES_PASSWORD: hackreactor25
+      POSTGRES_DB: addidas
