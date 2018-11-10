@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports: 
-      - "5555:3001"
+      - "3001:3001"
     command: npm start 
     depends_on:
       - db
