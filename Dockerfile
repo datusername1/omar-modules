@@ -3,6 +3,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 80
+EXPOSE 3001
 RUN npm run webpack
 CMD ["npm", "start"]
