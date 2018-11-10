@@ -1,20 +1,18 @@
-version: "3.1"
+version: "3"
 services: 
   web:
     build: .
     ports: 
-      - 80:3001
+      - "3001:3001"
     command: npm start 
     depends_on:
       - db
-    environment:
-      DATABASE_URL: postgres://omarjandali:hackreactor25@db:5432/addidas
   db:
     image: postgres 
     restart: always
     ports:
       - "5432:5432"
     environment: 
-      POSTGRES_USER: omarjandali
-      POSTGRES_PASSWORD: hackreactor25
-      POSTGRES_DB: addidas
+      - POSTGRES_USER=omarjandali
+      - POSTGRES_PASSWORD=hackreactor25
+      - POSTGRES_DB=addidas

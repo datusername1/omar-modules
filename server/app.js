@@ -1,7 +1,7 @@
 const server = require("./bin/www/index.js")
 const express = require("express")
 const normalize = require("normalize-port")
-// const databases = require("../database/index.js")
+const databases = require("../database/index.js")
 require('dotenv').config();
 
 const listenPort = 3001
