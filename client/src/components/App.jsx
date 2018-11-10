@@ -16,7 +16,7 @@ export default class App extends Component{
       images:[],
       magnify:false,
     }
-    axios.defaults.baseURL = "http://ec2-18-219-47-35.us-east-2.compute.amazonaws.com/";
+    axios.defaults.baseURL = "http://ec2-18-219-126-103.us-east-2.compute.amazonaws.com";
   }
 
 
