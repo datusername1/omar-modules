@@ -145,10 +145,15 @@ const shoeDecorator = (() => {
 
     const imgId = shoeApiData.images[0].id;
     const imgFileName = shoeApiData.images[0].fileName;
-    product.images = shoeApiData.images.map((image) => {
+    const all64HeightImageUrls = shoeApiData.images.map((image) => {
       return generateImageUrl(image.id, image.fileName, 64);
-    }).join(',');
+    });
 
+    product.images = all64HeightImageUrls.join(',');
+
+    product.options = [1, 2].map(function () {
+      return all64HeightImageUrls[getRandomInt(0, all64HeightImageUrls.length)];
+    }).join(',');
 
     shoe.featured = generateImageUrl(imgId, imgFileName, 1024);
 
@@ -176,8 +181,6 @@ const shoeDecorator = (() => {
         } ${
         faker.fake("{{address.countryCode}}")
         } ${
-        shoe.sport
-        } ${
         shoe.category}`;
     }
 
@@ -193,8 +196,6 @@ const generateProduct = (() => {
   const sizeList = "8 8.5 9 9.5 10 10.5 11 11.5 12";
   //const featured = 'https://loremflickr.com/800/800?random=1'
   const options = "https://loremflickr.com/70/70?random=2,https://loremflickr.com/70/70?random=3"
-  const imagesList = "https://loremflickr.com/100/100?random=4,https://loremflickr.com/100/100?random=5,https://loremflickr.com/100/100?random=6,https://loremflickr.com/100/100?random=7,https://loremflickr.com/100/100?random=8,https://loremflickr.com/100/100?random=9,https://loremflickr.com/100/100?random=10,https://loremflickr.com/100/100?random=11,https://loremflickr.com/100/100?random=12"
-
 
   return (category) => {
 
@@ -237,7 +238,6 @@ const generateProduct = (() => {
     product.intventory = getRandomInt(0, 5);
     product.quantity = getRandomInt(0, 101);
     product.sizes = sizeList;
-    product.options = options;
 
     if (product.category === 'Shoe' || product.category === 'Sandle') {
       product = shoeDecorator(product);
@@ -269,7 +269,7 @@ const categoriesForMock = [
 ];
 
 const generateAllData = () => {
-  products.sync().then(() => {
+  products.sync({ force: true }).then(() => {
     categoriesForMock.forEach((category) => {
       for (let i = 0; i < category.numItemsToGenerate; i += 1) {
         console.log(generateProduct(category.name))
