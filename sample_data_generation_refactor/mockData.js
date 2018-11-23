@@ -58,7 +58,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-const generateImageUrl = (imgId, imgFileName) => `http://demandware.edgesuite.net/sits_pod20-adidas/dw/image/v2/aaqx_prd/on/demandware.static/-/Sites-adidas-products/en_US/${imgId}/zoom/${imgFileName}?sh=${64}`
+const generateImageUrl = (imgId, imgFileName) => `http://demandware.edgesuite.net/sits_pod20-adidas/dw/image/v2/aaqx_prd/on/demandware.static/-/Sites-adidas-products/en_US/${imgId}/zoom/${imgFileName}?sh=1024`
 
 
 const hoodiePantsBackpackHatDecorator = (() => {
@@ -95,17 +95,17 @@ const hoodiePantsBackpackHatDecorator = (() => {
 
     if (decoratedProduct.category === 'Hoodie') {
       shoeApiData = hoodies[getRandomInt(0, hoodies.length)];
-      decoratedProduct.imageUrl = generateImageUrl(shoeApiData.images[0].id, shoeApiData.images[0].fileName);
+      decoratedProduct.featured = generateImageUrl(shoeApiData.images[0].id, shoeApiData.images[0].fileName);
     } else if (decoratedProduct.category === 'Pants') {
       shoeApiData = pants[getRandomInt(0, pants.length)];
-      decoratedProduct.imageUrl = generateImageUrl(shoeApiData.images[0].id, shoeApiData.images[0].fileName);
+      decoratedProduct.featured = generateImageUrl(shoeApiData.images[0].id, shoeApiData.images[0].fileName);
     } else if (decoratedProduct.category === 'Backpack') {
-      decoratedProduct.imageUrl = `https://loremflickr.com/320/240/${decoratedProduct.category}/all`;
+      decoratedProduct.featured = `https://loremflickr.com/320/240/${decoratedProduct.category}/all`;
     } else if (decoratedProduct.category === 'Hat') {
       shoeApiData = hats[getRandomInt(0, hats.length)];
-      decoratedProduct.imageUrl = generateImageUrl(shoeApiData.images[0].id, shoeApiData.images[0].fileName);
+      decoratedProduct.featured = generateImageUrl(shoeApiData.images[0].id, shoeApiData.images[0].fileName);
     } else if (decoratedProduct.category === 'Sandle') {
-      decoratedProduct.imageUrl = `https://loremflickr.com/320/240/${decoratedProduct.category}/all`;
+      decoratedProduct.featured = `https://loremflickr.com/320/240/${decoratedProduct.category}/all`;
     }
 
     decoratedProduct.name = `${faker.fake("{{address.city}}")} ${decoratedProduct.category}`;
@@ -146,7 +146,7 @@ const shoeDecorator = (() => {
     const imgId = shoeApiData.images[0].id;
     const imgFileName = shoeApiData.images[0].fileName;
 
-    shoe.imageUrl = `http://demandware.edgesuite.net/sits_pod20-adidas/dw/image/v2/aaqx_prd/on/demandware.static/-/Sites-adidas-products/en_US/${imgId}/zoom/${imgFileName}?sh=${64}`;
+    shoe.featured = `http://demandware.edgesuite.net/sits_pod20-adidas/dw/image/v2/aaqx_prd/on/demandware.static/-/Sites-adidas-products/en_US/${imgId}/zoom/${imgFileName}?sh=1024`;
 
     // TODO DRY!
     if (shoe.sport === 'Football' && shoe.team) {
@@ -187,7 +187,7 @@ const generateProduct = (() => {
   const colorsForMock = ["Black", "white", "red", "green", "yellow", "blue", "pink", "gray", "brown", "orange", "purple"];
   const validProductPriceRange = { min: 50, max: 300 };
   const sizeList = "8 8.5 9 9.5 10 10.5 11 11.5 12";
-  const featured = 'https://loremflickr.com/800/800?random=1'
+  //const featured = 'https://loremflickr.com/800/800?random=1'
   const options = "https://loremflickr.com/70/70?random=2,https://loremflickr.com/70/70?random=3"
   const imagesList = "https://loremflickr.com/100/100?random=4,https://loremflickr.com/100/100?random=5,https://loremflickr.com/100/100?random=6,https://loremflickr.com/100/100?random=7,https://loremflickr.com/100/100?random=8,https://loremflickr.com/100/100?random=9,https://loremflickr.com/100/100?random=10,https://loremflickr.com/100/100?random=11,https://loremflickr.com/100/100?random=12"
 
@@ -233,7 +233,6 @@ const generateProduct = (() => {
     product.intventory = getRandomInt(0, 5);
     product.quantity = getRandomInt(0, 101);
     product.sizes = sizeList;
-    product.featured = featured;
     product.options = options;
     product.images = imagesList;
 
