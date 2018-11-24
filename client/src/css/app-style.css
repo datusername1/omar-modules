@@ -68,3 +68,13 @@
   background-color:#fff;
   color:#000;
 }
+
+a.link{
+  color:black;
+  transition: color .1s cubic-bezier(.3,0,.45,1),background-color .1s cubic-bezier(.3,0,.45,1);
+}
+
+a.link:hover {
+  background-color: #000;
+  color: #fff;
+}
