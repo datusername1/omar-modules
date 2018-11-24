@@ -50,7 +50,7 @@ export default class App extends Component {
   render() {
     return (
       <div className={styles.moduleMargin}>
-        <Breadcrum />
+        <Breadcrum product={this.state.product} />
         <div className={styles.productDetails}>
           <div className={styles.banner}></div>
           <div className={styles.detailsContent}>

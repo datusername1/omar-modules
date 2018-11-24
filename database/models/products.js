@@ -21,7 +21,8 @@ const ProductPostgres = postgres.define(
     shipping: { type: seq.SMALLINT },
     category: { type: seq.STRING },
     review_count: { type: seq.INTEGER },
-    stars: { type: seq.INTEGER }
+    stars: { type: seq.INTEGER },
+    gender: { type: seq.STRING }
   },
   {
     timestamps: false

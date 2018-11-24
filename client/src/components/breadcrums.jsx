@@ -20,19 +20,19 @@ export default function Breadcrums(props) {
           <span className={styles.breadCrumMainItemSeperator}>/</span>
           <li className={styles.breadcrumListItemSection}>
             <a className={styles.breadCrumMainItem} href="">
-              <span>Mens</span>
+              <span>{props.product.gender}'s</span>
             </a>
           </li>
           <span className={styles.breadCrumMainItemSeperator}>/</span>
           <li className={styles.breadcrumListItemSection}>
             <a className={styles.breadCrumMainItem} href="">
-              <span>Shoes</span>
+              <span>{props.product.category}s</span>
             </a>
           </li>
           <span className={styles.breadCrumMainItemSeperator}>/</span>
           <li className={styles.breadcrumListItemSection}>
             <a className={styles.breadCrumMainItem} href="">
-              <span>Shoe Name</span>
+              <span>{props.product.name}</span>
             </a>
           </li>
 

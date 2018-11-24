@@ -269,7 +269,7 @@ const categoriesForMock = [
 ];
 
 const generateAllData = () => {
-  products.sync({ force: true }).then(() => {
+  products.sync().then(() => {
     categoriesForMock.forEach((category) => {
       for (let i = 0; i < category.numItemsToGenerate; i += 1) {
         console.log(generateProduct(category.name))
