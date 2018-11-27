@@ -4,7 +4,6 @@
 }
 
 .detailsInformation  {
-  height:105px;
   background-color: white;
   margin-bottom: 20px
 }
@@ -19,3 +18,9 @@
   background-color:#ededee;
   z-index:26
 }
+
+.glStarRating_star {
+  height: 18px;
+  color: black;
+}
+

@@ -1,36 +1,44 @@
-const { postgres } = require("../index.js")
-const seq = require("sequelize")
+const Sequelize = require('sequelize');
+const { postgres } = require('../index.js');
 
-const ProductPostgres = postgres.define(
-  "product",
+const products = postgres.define(
+  'product',
   {
-    _id:{type:seq.INTEGER, autoIncrement:true, primaryKey:true, allowNull:false},
-    name:{type:seq.STRING, allowNull:false},
-    price:{type:seq.FLOAT, allowNull:false},
-    featured:{type:seq.STRING},
-    options:{type:seq.TEXT},
-    images:{type:seq.TEXT},
-    colors:{type:seq.STRING}, 
-    sizes:{type:seq.STRING},
-    quantity:{type:seq.INTEGER}, 
-    inventory:{type:seq.BOOLEAN}, 
-    status:{type:seq.SMALLINT},
-    favorite:{type:seq.BOOLEAN},
-    shipping:{type:seq.SMALLINT}, 
-    category:{type:seq.STRING},
-    review_count:{type:seq.INTEGER}, 
-    stars:{type:seq.INTEGER}
+    _id: {
+      type: Sequelize.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+      allowNull: false,
+    },
+    name: { type: Sequelize.STRING },
+    price: { type: Sequelize.FLOAT },
+    team: { type: Sequelize.STRING },
+    sport: { type: Sequelize.STRING },
+    featured: { type: Sequelize.STRING },
+    options: { type: Sequelize.TEXT },
+    images: { type: Sequelize.TEXT },
+    colors: { type: Sequelize.STRING },
+    sizes: { type: Sequelize.STRING },
+    quantity: { type: Sequelize.INTEGER },
+    inventory: { type: Sequelize.BOOLEAN },
+    status: { type: Sequelize.SMALLINT },
+    favorite: { type: Sequelize.BOOLEAN },
+    shipping: { type: Sequelize.SMALLINT },
+    category: { type: Sequelize.STRING },
+    review_count: { type: Sequelize.INTEGER },
+    stars: { type: Sequelize.INTEGER },
+    gender: { type: Sequelize.STRING },
   },
   {
-    timestamps:false
+    timestamps: false,
   },
   postgres.sync()
     .then(() => {
-      console.log("product model set for postgres")
+      console.log('product model set for postgres');
     })
     .catch((err) => {
-      console.log(err)
-    })
-)
+      console.log(err);
+    }),
+);
 
-module.exports = ProductPostgres;
+module.exports = products;

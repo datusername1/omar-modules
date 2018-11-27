@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "seed": "node ./seedData.js",
-    "start": "nodemon ./server/app.js",
-    "webpack": "webpack",
+    "start": "nodemon ./server/bin/www",
+    "build": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "Faker": "^0.7.2",
     "axios": "0.18.0",
     "babel": "6.23.0",
     "babel-cli": "6.26.0",
@@ -27,6 +26,7 @@
     "express": "4.16.4",
     "express-partials": "0.3.0",
     "express-session": "1.15.6",
+    "faker": "^4.1.0",
     "file-system": "^2.2.2",
     "helmet": "3.14.0",
     "morgan": "1.9.1",

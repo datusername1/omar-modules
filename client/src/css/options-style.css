@@ -6,8 +6,9 @@
 .OptionTitle  {
   width:100%;
   margin:0 0 10px;
-  font-size:20px;
-  line-height:18px
+  font-size:18px;
+  line-height:18px;
+  font-family: 'AdiNeuePro-Black';
 }
 
 .OptionColorList  {
@@ -16,7 +17,8 @@
   font-size:13px;
   letter-spacing:2px;
   margin-bottom:10px;
-  text-align: left
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .OptionColorSection  {

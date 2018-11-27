@@ -19,10 +19,14 @@
   padding-bottom:5px;
   color:#000;
   line-height:20px;
-  font-size:14px;
+  font-size:16px;
   margin-top:0px;
   display: flex;
   margin-bottom: 0px
+}
+
+.breadCrumsList a {
+  transition: color .1s cubic-bezier(.3,0,.45,1),background-color .1s cubic-bezier(.3,0,.45,1);
 }
 
 .breadcrumListItemSection {
@@ -43,6 +47,12 @@
   font-size:13px;
   text-decoration:underline;
   vertical-align:bottom;
+  color: black;
+}
+
+.breadcrumListItemButton :hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .breadCrumListItemImage{
@@ -69,5 +79,6 @@
 
 .breadCrumMainItemSeperator{
   padding-left:5px;
-  padding-right:5px
+  padding-right:5px;
+  margin-top: 3px;
 }

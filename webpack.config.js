@@ -28,12 +28,12 @@ module.exports = {
             loader: "css-loader",
             options: {
               modules: true,
-              localIdentName: '[hash:base64]'
+              localIdentName: '[name]__[local]--[hash:base64]'
             }
           }
         ]
       }
-    ], 
+    ],
   },
   node: {
     fs: 'empty'
@@ -44,7 +44,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.HOSTNAME': JSON.stringify(process.env.HOSTNAME),
+      'process.env.HOSTNAME': JSON.stringify('localhost'),
       'process.env.PORT': JSON.stringify(process.env.PORT),
     })
   ]
