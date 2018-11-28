@@ -1,10 +1,15 @@
-const { postgres } = require("../index.js")
-const seq = require("sequelize")
+const { postgres } = require('../index.js');
+const seq = require('sequelize');
 
 const ProductPostgres = postgres.define(
-  "product",
+  'newproducts',
   {
-    _id: { type: seq.INTEGER, autoIncrement: true, primaryKey: true, allowNull: false },
+    _id: {
+      type: seq.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+      allowNull: false,
+    },
     name: { type: seq.STRING },
     price: { type: seq.FLOAT },
     team: { type: seq.STRING },
@@ -22,18 +27,19 @@ const ProductPostgres = postgres.define(
     category: { type: seq.STRING },
     review_count: { type: seq.INTEGER },
     stars: { type: seq.INTEGER },
-    gender: { type: seq.STRING }
+    gender: { type: seq.STRING },
   },
   {
-    timestamps: false
+    timestamps: false,
   },
-  postgres.sync()
+  postgres
+    .sync()
     .then(() => {
-      console.log("product model set for postgres")
+      console.log('product model set for postgres');
     })
-    .catch((err) => {
-      console.log(err)
+    .catch(err => {
+      console.log(err);
     })
-)
+);
 
 module.exports = ProductPostgres;
