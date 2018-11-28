@@ -4,10 +4,11 @@
   "description": "Addidas FEC",
   "main": "index.js",
   "scripts": {
-    "seed": "node ./seedData.js",
-    "start": "nodemon ./server/bin/www",
-    "react-dev": "webpack -w",
-    "build": "webpack",
+    "seed": "node ./sample_data_generation_refactor/mockData.js",
+    "start": "node ./server/app.js",
+    "start-dev": "nodemon ./server/app.js",
+    "webpack": "webpack",
+    "webpack-dev": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -56,6 +57,6 @@
   },
   "homepage": "https://github.com/FEC-MOTH/omar-modules#readme",
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.7"
   }
 }
