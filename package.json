@@ -7,7 +7,7 @@
     "seed": "node ./seedData.js",
     "start": "nodemon ./server/bin/www",
     "react-dev": "webpack -w",
-    "build": "webpack -w",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
