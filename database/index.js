@@ -4,7 +4,7 @@ const seq = require('sequelize');
 require('dotenv').config();
 
 const connectionPostgres = new seq('addidas', 'postgres', 'timtran', {
-  host: 'localhost',
+  host: 'productionPG',
   dialect: 'postgres',
 });
 
