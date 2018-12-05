@@ -10,7 +10,7 @@ export default function SizeQuantity(props) {
         <div className={styles.sizeQuantitySelector}>
           <div className={styles.SizeQuantityBox}>
             <select>
-              SELECT SIZE
+              <option selected="selected">SELECT SIZE</option>
               {/* {props.product.sizes.map(size => (
                 <option>{size}</option>
               ))} */}

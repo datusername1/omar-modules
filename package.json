@@ -6,7 +6,7 @@
   "scripts": {
     "seed": "node ./sample_data_generation_refactor/mockData.js",
     "start": "node ./server/app.js",
-    "start-dev": "nodemon ./server/app.js",
+    "start-dev": "nodemon ./server/bin/www/index.js",
     "webpack": "webpack",
     "webpack-dev": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"

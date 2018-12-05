@@ -1,10 +1,18 @@
-const server = require("./bin/www/index.js")
-const express = require("express")
-const normalize = require("normalize-port")
-const databases = require("../database/index.js")
 require('dotenv').config();
+const express = require('express');
+const path = require('path');
+const morgan = require('morgan');
+const parser = require('body-parser');
+const cors = require('cors');
+const router = require('./routers/main.js');
 
-const listenPort = 3001
-server.listen(listenPort, () => { console.log(`server is running at http://localhost:${listenPort}`) })
+const app = express();
 
-module.exports = server; 
+app.use(cors());
+app.use(morgan('dev'));
+app.use(parser.json());
+app.use(parser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use('/api', router);
+
+module.exports = app;

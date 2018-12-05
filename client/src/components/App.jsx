@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
 import Details from './details/details';
 import Carousel from './carousel/carousel';
 import Complete from './details/completeLook';
 import Breadcrum from './breadcrums';
-import axios from 'axios';
+
 import styles from '../css/app-style.css';
 
 export default class App extends Component {
@@ -15,11 +17,13 @@ export default class App extends Component {
         options: [],
         images: [],
         magnify: false,
-        sizes: [],
+        relatedProducts: [],
       });
-    axios.defaults.baseURL = 'http://' + 'localhost' + ':' + process.env.PORT;
-    // axios.defaults.baseURL =
-    //   'http://ec2-35-162-25-38.us-west-2.compute.amazonaws.com';
+    axios.defaults.baseURL =
+      'http://' + process.env.HOSTNAME + ':' + process.env.PORT;
+    this.findThreeRandomCategoriesNeqCurrentProduct = this.findThreeRandomCategoriesNeqCurrentProduct.bind(
+      this
+    );
   }
 
   componentDidMount() {
@@ -29,6 +33,20 @@ export default class App extends Component {
 
   generateRandomNumber(value) {
     return Math.floor(Math.random() * value);
+  }
+
+  findThreeRandomCategoriesNeqCurrentProduct() {
+    return ['Shoe', 'Hoodie', 'Pants', 'Hat']
+      .filter(elt => {
+        if (elt !== this.state.product.category) {
+          return true;
+        } else {
+          return false;
+        }
+      })
+      .sort((a, b) => {
+        return 0.5 - Math.random();
+      });
   }
 
   fetchProduct() {
@@ -41,8 +59,21 @@ export default class App extends Component {
           featured: response.data.featured,
           options: response.data.options.split(','),
           images: response.data.images.split(','),
-          sizes: response.data.sizes.split(','),
         });
+      })
+      .then(() => {
+        const categories = this.findThreeRandomCategoriesNeqCurrentProduct().join(
+          ','
+        );
+        axios
+          .get(`/api/product?categories=${categories}&limit=3`)
+          .then(response => {
+            console.log(response.data);
+            this.setState({ relatedProducts: response.data });
+          });
+      })
+      .catch(err => {
+        console.log(err);
       })
       .catch(err => {
         console.log(err);
@@ -64,14 +95,17 @@ export default class App extends Component {
               />
             </div>
             <div className={styles.status}>NEW</div>
+            <div className={styles.status}>NEW</div>
             <div className={styles.details}>
               <Details
-                sizes={this.state.sizes}
                 product={this.state.product}
                 options={this.state.options}
               />
             </div>
-            <Complete product={this.state.product} />
+            <Complete
+              relatedProducts={this.state.relatedProducts}
+              product={this.state.product}
+            />
           </div>
         </div>
       </div>
