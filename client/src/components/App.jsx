@@ -15,15 +15,15 @@ export default class App extends Component {
         options: [],
         images: [],
         magnify: false,
+        sizes: [],
       });
-    // axios.defaults.baseURL = "http://" + process.env.HOSTNAME + ":" + process.env.PORT;
-    axios.defaults.baseURL =
-      'http://ec2-35-162-25-38.us-west-2.compute.amazonaws.com';
+    axios.defaults.baseURL = 'http://' + 'localhost' + ':' + process.env.PORT;
+    // axios.defaults.baseURL =
+    //   'http://ec2-35-162-25-38.us-west-2.compute.amazonaws.com';
   }
 
   componentDidMount() {
     console.log('http://' + process.env.HOSTNAME + ':' + process.env.PORT);
-    console.log('supssssss');
     this.fetchProduct();
   }
 
@@ -41,6 +41,7 @@ export default class App extends Component {
           featured: response.data.featured,
           options: response.data.options.split(','),
           images: response.data.images.split(','),
+          sizes: response.data.sizes.split(','),
         });
       })
       .catch(err => {
@@ -65,6 +66,7 @@ export default class App extends Component {
             <div className={styles.status}>NEW</div>
             <div className={styles.details}>
               <Details
+                sizes={this.state.sizes}
                 product={this.state.product}
                 options={this.state.options}
               />
