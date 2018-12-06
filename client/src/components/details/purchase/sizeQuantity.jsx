@@ -2,41 +2,32 @@ import React, { Component } from 'react';
 import styles from '../../../css/purchase/sizeQuantity.css';
 
 export default function SizeQuantity(props) {
-  const sizes = props.product.sizes;
-  console.log(sizes);
+  console.log(props.sizes);
   return (
-    <div className={styles.sizeQuantity}>
+    <div className={styles.sizeQQuantity}>
       <div className={styles.sizeQuantitySize}>
         <div className={styles.sizeQuantitySelector}>
-          <div className={styles.SizeQuantityBox}>
-            <select>
-              <option selected="selected">SELECT SIZE</option>
-              {/* {props.product.sizes.map(size => (
-                <option>{size}</option>
-              ))} */}
-            </select>
-            <img
-              className={styles.SizeQuantityIcon}
-              src="http://icons-for-free.com/free-icons/png/512/308964.png"
-              alt=""
-            />
-          </div>
+          <select className={styles.SizeQuantityBox}>
+            <option selected="selected">SELECT SIZE</option>
+            {props.sizes.map(size => (
+              <option>{size}</option>
+            ))}
+          </select>
         </div>
       </div>
-      <div className={styles.QuantityBox}>
-        <div className={styles.QuantityBoxItem}>
-          <div className={styles.QuantityBoxDropdown}>
-            <div className={styles.SizeQuantityBox}>
-              <span>1</span>
-              <img
+
+      <select className={styles.QuantityBox}>
+        <option selected="selected">1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      {/* <img
                 className={styles.SizeQuantityIcon}
                 src="http://icons-for-free.com/free-icons/png/512/308964.png"
                 alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+              /> */}
     </div>
   );
 }

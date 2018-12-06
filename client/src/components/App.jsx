@@ -16,6 +16,7 @@ export default class App extends Component {
         featured: '',
         options: [],
         images: [],
+        sizes: [],
         magnify: false,
         relatedProducts: [],
       });
@@ -59,6 +60,7 @@ export default class App extends Component {
           featured: response.data.featured,
           options: response.data.options.split(','),
           images: response.data.images.split(','),
+          sizes: response.data.sizes.split(' '),
         });
       })
       .then(() => {
@@ -100,6 +102,7 @@ export default class App extends Component {
               <Details
                 product={this.state.product}
                 options={this.state.options}
+                sizes={this.state.sizes}
               />
             </div>
             <Complete

@@ -30,7 +30,7 @@ const controller = {
         res.send(parsedResponse);
       });
     } else {
-      const recordId = utils.generateRandomNumber(101);
+      const recordId = utils.generateRandomNumber(600);
       products
         .findById(recordId)
         .then(response => {

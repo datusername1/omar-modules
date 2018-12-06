@@ -1,9 +1,13 @@
-.purchaseForm  {
+.purchaseForm {
   margin: 0px;
-  width: 100%
+  width: 100%;
 }
 
-.sizeChart  {
+.sizeChart {
   margin-bottom: 10px;
-  width:100.09px
+  width: 100.09px;
+}
+
+.sizeQuantity {
+  display: flex;
 }
