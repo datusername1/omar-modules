@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ImageList from './imageList';
 import Status from './status';
+import ReactImageMagnify from 'react-image-magnify';
 import styles from '../../css/carousel/carousel.css';
 
 export default class Details extends Component {
@@ -8,9 +9,12 @@ export default class Details extends Component {
     super(props);
     this.state = {
       mainImage: '',
+      active: 0,
+      check: 0,
     };
 
     this.setImage = this.setImage.bind(this);
+    this.active = this.active.bind(this);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -22,28 +26,60 @@ export default class Details extends Component {
   }
 
   setImage(e) {
+    const active = e.target.id;
+    console.log(active);
+    console.log('state', this.state.active);
     const image = e.target.src;
     this.setState({
       mainImage: image,
+      active,
+    });
+  }
+
+  active(e) {
+    const active = e.target.id;
+    this.setState({
+      active,
+      check: active,
     });
   }
 
   render() {
-    console.log(this.props.featured);
-    console.log('this is the feature', this.state.mainImage);
     return (
       <div className={styles.FeaturedContainer}>
         <div className={styles.FeaturedSelector}>
-          <img
+          <ReactImageMagnify
+            className={styles.FeaturedImage}
+            {...{
+              smallImage: {
+                alt: '',
+                isFluidWidth: true,
+                src: this.state.mainImage,
+                // srcSet: this.srcSet,
+              },
+              largeImage: {
+                alt: '',
+                src: this.state.mainImage,
+                width: 1200,
+                height: 1200,
+              },
+
+              enlargedImagePosition: 'over',
+            }}
+          />
+          {/* <img
             className={styles.FeaturedImage}
             src={this.state.mainImage}
             alt=""
-          />
+          /> */}
         </div>
         <ImageList
           setImage={this.setImage}
           product={this.props.product}
           images={this.props.images}
+          active={this.state.active}
+          check={this.state.check}
+          activate={this.active}
         />
       </div>
     );

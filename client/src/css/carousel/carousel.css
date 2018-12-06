@@ -7,6 +7,7 @@
   height: 100%;
   margin: auto;
   position: relative;
+  z-index: 1;
 }
 
 .FeaturedImage {
@@ -14,5 +15,5 @@
   margin: auto;
   display: block;
   max-width: 100% !important;
-  background: green;
+  border-radius: 50px;
 }
