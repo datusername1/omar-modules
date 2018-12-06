@@ -9,12 +9,10 @@ export default class Details extends Component {
     super(props);
     this.state = {
       mainImage: '',
-      active: 0,
-      check: 0,
+      active: `image0`,
     };
 
     this.setImage = this.setImage.bind(this);
-    this.active = this.active.bind(this);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -26,21 +24,13 @@ export default class Details extends Component {
   }
 
   setImage(e) {
-    const active = e.target.id;
-    console.log(active);
-    console.log('state', this.state.active);
     const image = e.target.src;
+    const active = e.target.id;
+    console.log(image);
+    console.log(active);
     this.setState({
       mainImage: image,
-      active,
-    });
-  }
-
-  active(e) {
-    const active = e.target.id;
-    this.setState({
-      active,
-      check: active,
+      active: active,
     });
   }
 
@@ -78,8 +68,6 @@ export default class Details extends Component {
           product={this.props.product}
           images={this.props.images}
           active={this.state.active}
-          check={this.state.check}
-          activate={this.active}
         />
       </div>
     );

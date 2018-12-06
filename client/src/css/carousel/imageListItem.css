@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.ImageSection:focus {
+.ImageSectionActive {
   border: 1px solid #98989a;
   margin-bottom: 10px;
   cursor: pointer;
@@ -26,7 +26,7 @@
 
 .ImageSection:hover {
   border-top: 1px solid #98989a;
-  border-bottom: 1px solid #000;
+  border-bottom: 1.5px solid #000;
   cursor: pointer;
 }
 

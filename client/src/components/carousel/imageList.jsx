@@ -15,11 +15,9 @@ export default function Option(props) {
           <div key={image}>
             <ImageListItem
               i={index}
-              check={props.check}
               active={props.active}
               setImage={props.setImage}
               image={image}
-              activate={props.activate}
             />
           </div>
         ))}
