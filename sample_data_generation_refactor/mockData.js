@@ -163,7 +163,7 @@ const shoeDecorator = (() => {
     const imgId = shoeApiData.images[0].id;
     const imgFileName = shoeApiData.images[0].fileName;
     const all64HeightImageUrls = shoeApiData.images.map(image => {
-      return generateImageUrl(image.id, image.fileName, 64);
+      return generateImageUrl(image.id, image.fileName, 1024);
     });
 
     product.images = all64HeightImageUrls.join(',');
