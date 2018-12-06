@@ -1,26 +1,26 @@
-.detailsProduct  {
+.detailsProduct {
   padding: 20px;
-  height: 760px
+  height: 760px;
+  width: 93%;
 }
 
-.detailsInformation  {
+.detailsInformation {
   background-color: white;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
-.detailsCapsule  {
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  border:6px solid #ededee;
-  background-color:#ededee;
-  z-index:26
+.detailsCapsule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 6px solid #ededee;
+  background-color: #ededee;
+  z-index: 26;
 }
 
 .glStarRating_star {
   height: 18px;
   color: black;
 }
-

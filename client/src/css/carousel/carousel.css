@@ -1,18 +1,18 @@
-.FeaturedContainer  {
-  height:800px
+.FeaturedContainer {
+  height: 800px;
 }
 
-.FeaturedSelector  {
-  width:800px;
-  height:100%;
-  margin:auto;
-  position:relative
+.FeaturedSelector {
+  width: 720px;
+  height: 100%;
+  margin: auto;
+  position: relative;
 }
 
-.FeaturedImage  {
-  cursor:'url(https://png.icons8.com/metro/1600/zoom-in.png)';
-  margin:auto;
-  display:block;
+.FeaturedImage {
+  cursor: 'url(https://png.icons8.com/metro/1600/zoom-in.png)';
+  margin: auto;
+  display: block;
   max-width: 100% !important;
   background: green;
 }
