@@ -1,77 +1,80 @@
-.completeContent  {
-  margin-top:800px;
-  flex:1;
-  padding-top:1em;
-  border-bottom:none;
-  position:relative;
-  margin-bottom:40px
+.completeContent {
+  margin-top: 725px;
+  position: relative;
+  flex: 1;
+  padding-top: 1em;
+  border-bottom: none;
+  position: relative;
+  margin-bottom: 40px;
+  right: 80px;
 }
 
-.completeSection  {
-  padding-right:0;
-  padding-left:0;
+.completeSection {
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.completeSelector  {
-  flex-direction:row;
-  padding:0;
-  display:flex;
-  justify-content:flex-start;
+.completeSelector {
+  flex-direction: row;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 138%;
 }
 
-.completeTitle  {
-  min-height:90px;
-  display:flex;
-  align-items:center;
-  margin-bottom:0;
-  flex:1;
-  margin:0;
-  margin-right:35px;
-  align-self:flex-start;
-  font-size:30px;
-  line-height:28px;
+.completeTitle {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  flex: 1;
+  margin: 0;
+  margin-right: 35px;
+  align-self: flex-start;
+  font-size: 30px;
+  line-height: 28px;
 }
 
-.completeClothingSection  {
-  flex:2;
-  display:flex;
-  flex-direction:column
+.completeClothingSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-.CompletClothingJustify  {
-  justify-content:left;
-  display:flex
+.CompletClothingJustify {
+  justify-content: left;
+  display: flex;
 }
 
-.CompleteClothingItemSelector  {
-  max-width:90px;
-  position:relative;
-  margin:0 15px 0 0
+.CompleteClothingItemSelector {
+  max-width: 90px;
+  position: relative;
+  margin: 0 15px 0 0;
 }
 
-.CompleteClothingItemImage  {
-  position:relative  
+.CompleteClothingItemImage {
+  position: relative;
 }
 
-.CompleteClothingItemPic  {
-  height:90px;
-  width:90px;
-  cursor:pointer
+.CompleteClothingItemPic {
+  height: 90px;
+  width: 90px;
+  cursor: pointer;
 }
 
-.CompleteClothingItemDetails  {
-  margin-top:15px;
-  text-align:center;
-  cursor:pointer
+.CompleteClothingItemDetails {
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.CompleteClothingDetailsValue  {
-  display:inline-block
+.CompleteClothingDetailsValue {
+  display: inline-block;
 }
 
-.CompleteClothingDetailsAmount  {
-  display:block;
-  padding-left:0;
-  font-size:16px;
-  color:#000
+.CompleteClothingDetailsAmount {
+  display: block;
+  padding-left: 0;
+  font-size: 16px;
+  color: #000;
 }
