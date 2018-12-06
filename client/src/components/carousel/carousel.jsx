@@ -14,7 +14,7 @@ export default class Details extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.props.featured !== prevState.mainImage) {
+    if (!prevState.mainImage) {
       this.setState({
         mainImage: this.props.featured,
       });
