@@ -1,0 +1,33 @@
+.popupInner {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0;
+  bottom: 0%;
+  margin: auto;
+  width: 75%;
+  height: 75%;
+  background-color: white;
+}
+
+.button {
+  position: absolute;
+  left: 98%;
+  top: -2%;
+  width: 3%;
+  font-size: 25px;
+  background-color: invisb;
+  height: 5%;
+  background-color: white;
+  border-color: black;
+  box-shadow: 0;
+  box-shadow: inset 0px white;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  padding: 0;
+  border: 1px 1px 1px 1px;
+  border-left-width: 1px;
+  border-width: medium;
+  cursor: pointer;
+}
