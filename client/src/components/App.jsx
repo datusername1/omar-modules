@@ -15,13 +15,14 @@ export default class App extends Component {
         product: '',
         featured: '',
         options: [],
-        images: [],
+        images: [],s
         sizes: [],
         magnify: false,
         relatedProducts: [],
       });
     axios.defaults.baseURL =
-      'http://' + process.env.HOSTNAME + ':' + process.env.PORT;
+      // 'http://' + process.env.HOSTNAME + ':' + process.env.PORT;
+      'http://54.146.229.91';
     this.findThreeRandomCategoriesNeqCurrentProduct = this.findThreeRandomCategoriesNeqCurrentProduct.bind(
       this
     );
