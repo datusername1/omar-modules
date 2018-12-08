@@ -30,10 +30,11 @@ const controller = {
         res.send(parsedResponse);
       });
     } else {
-      const recordId = utils.generateRandomNumber(600);
+      const recordId = utils.generateRandomNumber(400);
       products
         .findById(recordId)
         .then(response => {
+          console.log(response.dataValues);
           res.status(200).send(response.dataValues);
         })
         .catch(err => {

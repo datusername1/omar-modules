@@ -124,6 +124,22 @@ const hoodiePantsBackpackHatDecorator = (() => {
       }/all`;
     }
 
+    const imgId = shoeApiData.images[0].id;
+    const imgFileName = shoeApiData.images[0].fileName;
+    const all64HeightImageUrls = shoeApiData.images.map(image => {
+      return generateImageUrl(image.id, image.fileName, 1024);
+    });
+
+    product.images = all64HeightImageUrls.join(',');
+
+    product.options = [1, 2]
+      .map(function() {
+        return all64HeightImageUrls[
+          getRandomInt(0, all64HeightImageUrls.length)
+        ];
+      })
+      .join(',');
+
     decoratedProduct.name = `${faker.fake('{{address.city}}')} ${
       decoratedProduct.category
     }`;
@@ -285,10 +301,10 @@ const createProduct = data => {
 
 const categoriesForMock = [
   { name: 'Shoe', numItemsToGenerate: 100 },
-  { name: 'Sandle', numItemsToGenerate: 100 },
+  { name: 'Sandle', numItemsToGenerate: 0 },
   { name: 'Hoodie', numItemsToGenerate: 100 },
   { name: 'Pants', numItemsToGenerate: 100 },
-  { name: 'Backpack', numItemsToGenerate: 100 },
+  { name: 'Backpack', numItemsToGenerate: 0 },
   { name: 'Hat', numItemsToGenerate: 100 },
 ];
 
