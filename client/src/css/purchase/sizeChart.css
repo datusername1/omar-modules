@@ -1,5 +1,5 @@
 .sizeChartItem {
-  display: inline;
+  display: flex;
   vertical-align: bottom;
   padding-left: 1px;
   padding-right: 1px;
@@ -12,8 +12,6 @@
 .sizeChartIcon {
   height: 17px;
   width: 17px;
-  position: relative;
-  top: 1px;
   margin-right: 7px;
 }
 
@@ -55,4 +53,10 @@
   transition: 0.5s;
   opacity: 1;
   visibility: visible;
+}
+
+p {
+  line-height: 22px;
+  margin-bottom: 16px;
+  font-size: 16px;
 }

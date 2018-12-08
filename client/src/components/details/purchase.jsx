@@ -7,7 +7,7 @@ import styles from '../../css/purchase-style.css';
 
 export default function Purchase(props) {
   return (
-    <form action="" className={styles.purchaseForm}>
+    <div action="" className={styles.purchaseForm}>
       <div className={styles.sizeChart}>
         <SizeChart product={props.product} />
       </div>
@@ -16,6 +16,6 @@ export default function Purchase(props) {
       </div>
       <AddToBag product={props.product} />
       <Shipping product={props.product} />
-    </form>
+    </div>
   );
 }

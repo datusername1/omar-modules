@@ -1,0 +1,54 @@
+.freeShippingInner {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0;
+  bottom: 0%;
+  margin: auto;
+  width: 75%;
+  height: 40%;
+  background-color: white;
+  border-color: black;
+  border-width: medium;
+  border-style: solid;
+  overflow: hidden;
+}
+
+.button {
+  position: fixed;
+  left: 86%;
+  top: 28%;
+  width: 2.5%;
+  font-size: 25px;
+  height: 4%;
+  background-color: white;
+  border-color: black;
+  box-shadow: 0;
+  box-shadow: inset 0px white;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  padding: 0;
+  border: 1px 1px 1px 1px;
+  border-left-width: 1px;
+  border-width: medium;
+  cursor: pointer;
+}
+
+.shippingInfo {
+  margin: 20px;
+}
+
+.h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 900;
+}
+
+p {
+  line-height: 22px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}

@@ -89,13 +89,14 @@
   color: #000;
 }
 
-a.link {
+.link {
   color: black;
+  text-decoration: underline;
   transition: color 0.1s cubic-bezier(0.3, 0, 0.45, 1),
     background-color 0.1s cubic-bezier(0.3, 0, 0.45, 1);
 }
 
-a.link:hover {
+.link:hover {
   background-color: #000;
   color: #fff;
 }

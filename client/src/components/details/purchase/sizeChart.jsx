@@ -15,7 +15,6 @@ export default class SizeChart extends Component {
   }
 
   renderPopup(e) {
-    e.preventDefault();
     this.setState({
       popupState: !this.state.popupState,
     });
@@ -29,7 +28,7 @@ export default class SizeChart extends Component {
           src="https://png.icons8.com/metro/1600/ruler.png"
           alt=""
         />
-        <div onClick={this.renderPopup} href="" class={appStyles.link}>
+        <div onClick={this.renderPopup} href="" className={appStyles.link}>
           Size Chart
         </div>
 
