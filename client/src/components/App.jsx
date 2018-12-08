@@ -22,7 +22,7 @@ export default class App extends Component {
       });
     axios.defaults.baseURL =
       // 'http://' + process.env.HOSTNAME + ':' + process.env.PORT;
-      'http://54.146.229.91';
+      'http://54.146.229.91:3003';
     this.findThreeRandomCategoriesNeqCurrentProduct = this.findThreeRandomCategoriesNeqCurrentProduct.bind(
       this
     );
