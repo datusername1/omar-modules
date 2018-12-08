@@ -15,7 +15,7 @@ export default class App extends Component {
         product: '',
         featured: '',
         options: [],
-        images: [],s
+        images: [],
         sizes: [],
         magnify: false,
         relatedProducts: [],
