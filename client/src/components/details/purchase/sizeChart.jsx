@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Popup from './popup/Popup';
 import styles from '../../../css/purchase/sizeChart.css';
 import appStyles from '../../../css/app-style.css';
+import { EPERM } from 'constants';
 
 export default class SizeChart extends Component {
   constructor(props) {
@@ -13,7 +14,8 @@ export default class SizeChart extends Component {
     this.renderPopup = this.renderPopup.bind(this);
   }
 
-  renderPopup() {
+  renderPopup(e) {
+    e.preventDefault();
     this.setState({
       popupState: !this.state.popupState,
     });
@@ -30,14 +32,12 @@ export default class SizeChart extends Component {
         <div onClick={this.renderPopup} href="" class={appStyles.link}>
           Size Chart
         </div>
-        {this.state.popupState ? (
-          <div className={styles.popup}>
-            <Popup
-              renderPopup={this.renderPopup}
-              className={styles.popupInner}
-            />
-          </div>
-        ) : null}
+
+        <div
+          className={this.state.popupState ? styles.popupOn : styles.popupOff}
+        >
+          <Popup renderPopup={this.renderPopup} className={styles.popupInner} />
+        </div>
       </div>
     );
   }

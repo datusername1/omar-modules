@@ -177,6 +177,12 @@ const fakeSizeData = {
     '--',
     '--',
   ],
+
+  measurementPictures: [
+    'https://www.adidas.com/glass/assets/img/size-charts/shoes/img-adidas-shoes-1.png',
+    'https://www.adidas.com/glass/assets/img/size-charts/shoes/img-adidas-shoes-2.png',
+    'https://www.adidas.com/glass/assets/img/size-charts/shoes/img-adidas-shoes-3.png',
+  ],
 };
 
 module.exports = { fakeSizeData };

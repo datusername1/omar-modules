@@ -5,19 +5,25 @@
   top: 0;
   bottom: 0%;
   margin: auto;
-  width: 75%;
-  height: 75%;
+  width: 73%;
+  height: 90%;
   background-color: white;
+  border-color: black;
+  border-width: medium;
+  border-style: solid;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
+.allSizeChart {
+}
 .button {
-  position: absolute;
-  left: 98%;
-  top: -2%;
-  width: 3%;
+  position: fixed;
+  left: 85%;
+  top: 3%;
+  width: 2.5%;
   font-size: 25px;
-  background-color: invisb;
-  height: 5%;
+  height: 4%;
   background-color: white;
   border-color: black;
   box-shadow: 0;
@@ -30,4 +36,124 @@
   border-left-width: 1px;
   border-width: medium;
   cursor: pointer;
+}
+
+.mainSizeChart {
+  width: 97.3%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+}
+
+.headings {
+  /* position: absolute;
+  top: 3%;
+  left: 1.8%; */
+}
+
+.h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 900;
+}
+
+.h4 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 900;
+}
+
+.h5 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 1000;
+}
+
+.scrollToImage {
+  margin-bottom: 10px;
+  padding-left: 1px;
+  padding-right: 1px;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.1s cubic-bezier(0.3, 0, 0.45, 1),
+    background-color 0.1s cubic-bezier(0.3, 0, 0.45, 1);
+}
+
+.scrollToImage:hover {
+  background-color: #000;
+  color: white;
+}
+
+.sizeChartContainer {
+  margin-top: 10px;
+  width: 100%;
+  height: 375px;
+  display: -webkit-inline-box;
+}
+
+.sizeChartMainTr {
+  width: 222px;
+  border-right-style: solid;
+  border-right-color: black;
+  border-right-width: thick;
+  height: 381px;
+  margin-top: -2px;
+}
+
+.sizeChartMainTitle {
+  position: relative;
+  padding: 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+  text-align: center;
+  background-color: #ebedee;
+  border-color: #d9dcdd;
+  height: 60px;
+  width: 222px;
+}
+
+.sizeListScrollContainer {
+  width: 82%;
+  overflow-x: auto;
+  height: 105%;
+}
+.sizeListScroll {
+  border-collapse: collapse;
+  flex: 100% 1 1;
+  overflow-x: auto;
+  margin-bottom: 0;
+}
+
+.sizeBlocks {
+  min-width: 80px;
+  height: 60px;
+  border: 1px solid #ebedee;
+  text-align: center;
+}
+
+.sizeP {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  font-size: 14px;
+  border-bottom-width: 1px;
+}
+
+.headings2 {
+  margin: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+.howToMeasure {
+  margin: 20px;
 }
