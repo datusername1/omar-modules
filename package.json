@@ -58,7 +58,6 @@
   },
   "homepage": "https://github.com/FEC-MOTH/omar-modules#readme",
   "devDependencies": {
-    "nodemon": "^1.18.7",
     "webpack-cli": "^3.1.2"
   }
 }
