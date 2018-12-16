@@ -33,13 +33,13 @@ run webpack => npm run webpack
 ```
 
 ## Contributors for this repository 
-Omar Jandali\
+Omar Jandali
 https://github.com/omar-jandali
-Kyle Mayers\
+Kyle Mayers
 https://github.com/krmayer
-Hayden Betts\
+Hayden Betts
 https://github.com/haydenbetts
-Tim Tran\
+Tim Tran
 https://github.com/ttran835
 
 ## Original Shoedidas Team
