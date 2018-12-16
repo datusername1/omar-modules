@@ -34,24 +34,24 @@ run webpack => npm run webpack
 
 ## Contributors for this repository 
 Omar Jandali
-https://github.com/omar-jandali
+> https://github.com/omar-jandali
 Kyle Mayers
-https://github.com/krmayer
+> https://github.com/krmayer
 Hayden Betts
-https://github.com/haydenbetts
+> https://github.com/haydenbetts
 Tim Tran
-https://github.com/ttran835
+> https://github.com/ttran835
 
 ## Original Shoedidas Team
 > Hack Reactor Los Angeles 25:
 
-Hayden Betts\
-https://github.com/haydenbetts
-Tim Tran\
-https://github.com/ttran835
-Omar Jandali\
-https://github.com/omar-jandali
-Matthew Lin\
-https://github.com/mlin367
+Hayden Betts
+> https://github.com/haydenbetts
+Tim Tran
+> https://github.com/ttran835
+Omar Jandali
+> https://github.com/omar-jandali
+Matthew Lin
+> https://github.com/mlin367
 
 
