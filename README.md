@@ -1,4 +1,7 @@
-# omar-modules
+# Shoedidas -- Primary Producy Display 
+
+Originally created by Omar Jandali
+> github.com/omar-jandali
 
 Omar Jandali FEC capstone module. (Addidas Product Page - product description)
 
