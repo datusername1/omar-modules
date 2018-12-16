@@ -17,6 +17,6 @@ services:
     restart: always
     build: .
     ports:
-      - '80:3001'
+      - '3003:3003'
     links:
       - productionPG

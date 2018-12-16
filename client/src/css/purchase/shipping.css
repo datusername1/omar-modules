@@ -1,39 +1,86 @@
-.ShippingSection{
-  cursor:pointer;
+.ShippingSection {
+  cursor: pointer;
 }
 
-.ShippingSelector{
-  width:100%
+.ShippingSelector {
+  width: 100%;
 }
 
-.ShippingIconSelector{
-  width:100%;
-  display:flex
+.ShippingIconSelector {
+  width: 100%;
+  display: flex;
 }
 
-.ShippingIconBox{
-  display:inline;
-  position:relative;
+.ShippingIconBox {
+  display: inline;
+  position: relative;
   margin-right: 10px;
-  width:25px;
-  height:25px;
+  width: 25px;
+  height: 25px;
 }
 
-.ShippingImage{
-  height:19px;
-  width:19px;
-  display:inline-block;
-  vertical-align:text-top;
+.ShippingImage {
+  height: 19px;
+  width: 19px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
-.ShippingStatus{
-  display:inline
+.ShippingStatus {
+  display: inline;
 }
 
-.ShippingStatusMessage{
-  vertical-align:text-top;
-  padding-left:1px;
-  padding-right:1px;
-  color:#000;
-  text-decoration:underline
+.ShippingStatusMessage {
+  vertical-align: text-top;
+  padding-left: 1px;
+  padding-right: 1px;
+  color: #000;
+  text-decoration: underline;
+  transition: color 0.1s cubic-bezier(0.3, 0, 0.45, 1),
+    background-color 0.1s cubic-bezier(0.3, 0, 0.45, 1);
+}
+
+.ShippingStatusMessage:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.shippingInfoShow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  cursor: default;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.shippingInfoHide {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  cursor: default;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }

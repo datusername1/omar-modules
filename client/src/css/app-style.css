@@ -1,95 +1,102 @@
-@font-face{
-  font-family:"AdihausDIN";
-  src:url('https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/fonts/AdihausDIN-Regular.woff2');
+@font-face {
+  font-family: 'AdihausDIN';
+  src: url('https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/fonts/AdihausDIN-Regular.woff2');
 }
 
 @font-face {
   font-family: 'AdiNeuePro-Black';
-  src: url('https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/fonts/adineuePRO-Black.woff2') format('woff2');
+  src: url('https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/fonts/adineuePRO-Black.woff2')
+    format('woff2');
 }
 
 @font-face {
   font-family: 'AdiNeuePro';
-  src: url('https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/fonts/adineuePRO-Regular.woff2') format('woff2');
+  src: url('https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/fonts/adineuePRO-Regular.woff2')
+    format('woff2');
 }
 
-.moduleMargin{
+.moduleMargin {
   margin-top: 120px;
 }
 
-.banner{
-  height:800px;
-  background-color:#ededed;
-  width:100%;
-  position:absolute;
-  left:0;
-  top:0;
-  overflow:hidden;
+.banner {
+  height: 720px;
+  background-color: #ededed;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
 }
 
-.detailsContent{
-  display:flex;
-  flex-flow:row-reverse;
-  margin-top:0;
-  float:none;
-  position:relative;
-  margin-bottom:15px;
-  width:1280px;
-  padding-left:15px;
-  padding-right:15px;
-  margin-left:auto;
-  margin-right:auto;
+.detailsContent {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 0;
+  float: none;
+  position: relative;
+  margin-bottom: 15px;
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: end;
 }
 
-.details{
-  padding-left:15px;
-  padding-right:15px;
-  width:30.333%;
-  background-color:white;
-  height:800px;
+.details {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 428px;
+  background-color: white;
+  height: 660px;
+  position: relative;
+  left: 14%;
 }
 
-.productDetails{
-  min-height:840px;
-  position:relative;
-  z-index:4;
+.productDetails {
+  min-height: 840px;
+  position: relative;
+  z-index: 4;
 }
 
-.productCarousel{
-  position:absolute;
-  left:0;
-  top:0;
-  float:none;
-  margin-bottom:20px;
-  width:65.03%;
+.productCarousel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: none;
+  margin-bottom: 20px;
+  width: 75%;
 }
 
 .status {
-  font-style:italic;
-  top:0;
-  left:0;
-  transform:none;
-  padding:7px;
-  margin:30px 30px 30px 0;
-  font-size:13px;
-  text-align:center;
-  display:inline-block;
-  line-height:1.1em;
-  position:absolute;
-  max-width:90%;
-  white-space:nowrap;
-  letter-spacing:2px;
-  transform-origin:right top;
-  background-color:#fff;
-  color:#000;
+  font-style: italic;
+  top: 0;
+  left: -5%;
+  transform: none;
+  padding: 7px;
+  margin: 30px 30px 30px 0;
+  font-size: 13px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.1em;
+  position: absolute;
+  max-width: 90%;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  transform-origin: right top;
+  background-color: #fff;
+  color: #000;
 }
 
-a.link{
-  color:black;
-  transition: color .1s cubic-bezier(.3,0,.45,1),background-color .1s cubic-bezier(.3,0,.45,1);
+.link {
+  color: black;
+  text-decoration: underline;
+  transition: color 0.1s cubic-bezier(0.3, 0, 0.45, 1),
+    background-color 0.1s cubic-bezier(0.3, 0, 0.45, 1);
 }
 
-a.link:hover {
+.link:hover {
   background-color: #000;
   color: #fff;
 }

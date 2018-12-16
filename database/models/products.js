@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const { postgres } = require('../index.js');
 
 const products = postgres.define(
-  'product',
+  'newproducts',
   {
     _id: {
       type: Sequelize.INTEGER,
@@ -32,13 +32,14 @@ const products = postgres.define(
   {
     timestamps: false,
   },
-  postgres.sync()
+  postgres
+    .sync()
     .then(() => {
       console.log('product model set for postgres');
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err);
-    }),
+    })
 );
 
 module.exports = products;

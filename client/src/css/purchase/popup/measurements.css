@@ -1,0 +1,50 @@
+.image {
+  max-width: 100%;
+}
+
+.desAndPicContainer {
+  width: 99%;
+}
+
+.instructionsContainer {
+  display: -webkit-inline-box;
+}
+
+.steps {
+  width: 94.7%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.instructions {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.picturesAndDescription {
+  width: 33%;
+  background-color: #fff;
+  border: 1px solid #d9dcdd;
+  transition: -webkit-transform 0.2s cubic-bezier(0.3, 0, 0.45, 1);
+  transition: transform 0.2s cubic-bezier(0.3, 0, 0.45, 1);
+  transition: transform 0.2s cubic-bezier(0.3, 0, 0.45, 1),
+    -webkit-transform 0.2s cubic-bezier(0.3, 0, 0.45, 1);
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  margin: 0 10px 0 0;
+}
+
+.stepsParagraph {
+  width: 98%;
+}

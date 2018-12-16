@@ -1,18 +1,38 @@
 .ImageSection {
-  border:1px solid #98989a;
-  margin-bottom:10px;
-  cursor:pointer;
-  height:auto;
-  flex-grow:0;
-  flex-shrink:0;
-  position:relative;
-  max-height:60px;
-  overflow:hidden
+  border: 1px solid #98989a;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.ImageSectionActive {
+  border: 1px solid #98989a;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  max-height: 60px;
+  overflow: hidden;
+  border-top: 1px solid #98989a;
+  border-bottom: 1.5px solid #000;
+}
+
+.ImageSection:hover {
+  border-top: 1px solid #98989a;
+  border-bottom: 1.5px solid #000;
+  cursor: pointer;
 }
 
 .ImagePic {
-  width:100%;
-  height:auto;
-  display:block;
-  max-width:100%
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
 }

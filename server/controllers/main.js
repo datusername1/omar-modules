@@ -12,28 +12,32 @@ const controller = {
       const responses = [];
 
       for (let i = 0; i < categories.length; i += 1) {
-        responses.push(products.findAll({
-          order: Sequelize.fn('RANDOM'),
-          where: {
-            category: categories[i],
-          },
-          limit,
-        }));
+        responses.push(
+          products.findAll({
+            order: Sequelize.fn('RANDOM'),
+            where: {
+              category: categories[i],
+            },
+            limit,
+          })
+        );
       }
-      Promise.all(responses).then((response) => {
+      Promise.all(responses).then(response => {
         const parsedResponse = [];
-        Object.keys(response).forEach((key) => {
+        Object.keys(response).forEach(key => {
           parsedResponse.push(response[key][0].get({ plain: true }));
         });
         res.send(parsedResponse);
       });
     } else {
-      const recordId = utils.generateRandomNumber(101);
-      products.findById(recordId)
-        .then((response) => {
+      const recordId = utils.generateRandomNumber(400);
+      products
+        .findById(recordId)
+        .then(response => {
+          console.log(response.dataValues);
           res.status(200).send(response.dataValues);
         })
-        .catch((err) => {
+        .catch(err => {
           console.log(err);
         });
     }
