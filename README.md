@@ -7,8 +7,9 @@ All components shown in 10 seconds preview are fully modular microservices. They
 React | Express | PostgreSQL | Amazon EC2 | Docker | Node.js
 
 ## Demo of all components proxy together
-![Quick Demo](https://media.giphy.com/media/YWJk07IfBS7lTwrv4I/giphy.gif)
 > http://54.146.229.91/
+![Quick Demo](https://media.giphy.com/media/YWJk07IfBS7lTwrv4I/giphy.gif)
+
 
 ## Demo of Primary Product Display
 > http://54.146.229.91:3003/
@@ -20,8 +21,10 @@ Due to dependencies changes as of December 2018, it may not work correctly when 
 ## How to run locally
 Download and install PostgreSQL\
 > https://www.postgresql.org/docs/10/tutorial-start.html
+
 Start PostgreSQL on your local command Shell \
 Go to ENV file and change DB information to corollate with information that you created locally for PostgreSQL
+
 Then:\
 ```
 install the package => npm install
