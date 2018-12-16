@@ -1,4 +1,4 @@
-# Shoedidas -- Primary Product Display
+# Shoedidas - Primary Product Display
 This repository contains mocked examples of the primary product section of Adidas' product page as they appeared on December 2018.
 
 All components shown in 10 seconds preview are fully modular microservices. They can be integrated with one another seamlessly.
