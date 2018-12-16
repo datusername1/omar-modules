@@ -25,7 +25,7 @@ Download and install PostgreSQL\
 Start PostgreSQL on your local command Shell \
 Go to ENV file and change DB information to corollate with information that you created locally for PostgreSQL
 
-Then:\
+Then:
 ```
 install the package => npm install
 run the seed data => npm run seed
