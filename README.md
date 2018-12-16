@@ -30,14 +30,14 @@ run webpack => npm run webpack
 ```
 
 ## Contributors for this repository 
-Omar Jandali
-> https://github.com/omar-jandali
-Kyle Mayers 
-> https://github.com/krmayer
-Hayden Betts
-> https://github.com/haydenbetts
-Tim Tran
-> https://github.com/ttran835
+Omar Jandali\
+https://github.com/omar-jandali
+Kyle Mayers\
+https://github.com/krmayer
+Hayden Betts\
+https://github.com/haydenbetts
+Tim Tran\
+https://github.com/ttran835
 
 ## Original Shoedidas Team
 > Hack Reactor Los Angeles 25:
